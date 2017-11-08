@@ -1,6 +1,6 @@
-import Popper from 'element-ui/src/utils/vue-popper';
+import Popper from 'jade-ui/src/utils/vue-popper';
 import debounce from 'throttle-debounce/debounce';
-import { getFirstComponentChild } from 'element-ui/src/utils/vdom';
+import { getFirstComponentChild } from 'jade-ui/src/utils/vdom';
 import Vue from 'vue';
 
 export default {

@@ -99,22 +99,22 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'element-ui/src/mixins/emitter';
-  import Focus from 'element-ui/src/mixins/focus';
-  import Locale from 'element-ui/src/mixins/locale';
-  import ElInput from 'element-ui/packages/input';
+  import Emitter from 'jade-ui/src/mixins/emitter';
+  import Focus from 'jade-ui/src/mixins/focus';
+  import Locale from 'jade-ui/src/mixins/locale';
+  import ElInput from 'jade-ui/packages/input';
   import ElSelectMenu from './select-dropdown.vue';
   import ElOption from './option.vue';
-  import ElTag from 'element-ui/packages/tag';
-  import ElScrollbar from 'element-ui/packages/scrollbar';
+  import ElTag from 'jade-ui/packages/tag';
+  import ElScrollbar from 'jade-ui/packages/scrollbar';
   import debounce from 'throttle-debounce/debounce';
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import { addClass, removeClass, hasClass } from 'element-ui/src/utils/dom';
-  import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
-  import { t } from 'element-ui/src/locale';
-  import scrollIntoView from 'element-ui/src/utils/scroll-into-view';
-  import { getValueByPath } from 'element-ui/src/utils/util';
-  import { valueEquals } from 'element-ui/src/utils/util';
+  import Clickoutside from 'jade-ui/src/utils/clickoutside';
+  import { addClass, removeClass, hasClass } from 'jade-ui/src/utils/dom';
+  import { addResizeListener, removeResizeListener } from 'jade-ui/src/utils/resize-event';
+  import { t } from 'jade-ui/src/locale';
+  import scrollIntoView from 'jade-ui/src/utils/scroll-into-view';
+  import { getValueByPath } from 'jade-ui/src/utils/util';
+  import { valueEquals } from 'jade-ui/src/utils/util';
   import NavigationMixin from './navigation-mixin';
 
   const sizeMap = {

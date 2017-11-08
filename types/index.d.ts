@@ -73,7 +73,7 @@ declare namespace ElementUI {
   }
 
   /**
-   * Install all element-ui components into Vue.
+   * Install all jade-ui components into Vue.
    * Please do not invoke this method directly.
    * Call `Vue.use(ElementUI)` to install.
    */

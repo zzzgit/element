@@ -14,10 +14,10 @@
   </el-menu-collapse-transition>
 </template>
 <script>
-  import emitter from 'element-ui/src/mixins/emitter';
-  import Migrating from 'element-ui/src/mixins/migrating';
-  import Menubar from 'element-ui/src/utils/menu/aria-menubar';
-  import { addClass, removeClass, hasClass } from 'element-ui/src/utils/dom';
+  import emitter from 'jade-ui/src/mixins/emitter';
+  import Migrating from 'jade-ui/src/mixins/migrating';
+  import Menubar from 'jade-ui/src/utils/menu/aria-menubar';
+  import { addClass, removeClass, hasClass } from 'jade-ui/src/utils/dom';
 
   export default {
     name: 'ElMenu',

@@ -76,11 +76,11 @@
   </div>
 </template>
 <script>
-  import emitter from 'element-ui/src/mixins/emitter';
-  import Focus from 'element-ui/src/mixins/focus';
-  import Migrating from 'element-ui/src/mixins/migrating';
+  import emitter from 'jade-ui/src/mixins/emitter';
+  import Focus from 'jade-ui/src/mixins/focus';
+  import Migrating from 'jade-ui/src/mixins/migrating';
   import calcTextareaHeight from './calcTextareaHeight';
-  import merge from 'element-ui/src/utils/merge';
+  import merge from 'jade-ui/src/utils/merge';
 
   export default {
     name: 'ElInput',

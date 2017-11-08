@@ -1,9 +1,9 @@
 <script>
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import Emitter from 'element-ui/src/mixins/emitter';
-  import Migrating from 'element-ui/src/mixins/migrating';
-  import ElButton from 'element-ui/packages/button';
-  import ElButtonGroup from 'element-ui/packages/button-group';
+  import Clickoutside from 'jade-ui/src/utils/clickoutside';
+  import Emitter from 'jade-ui/src/mixins/emitter';
+  import Migrating from 'jade-ui/src/mixins/migrating';
+  import ElButton from 'jade-ui/packages/button';
+  import ElButtonGroup from 'jade-ui/packages/button-group';
 
   export default {
     name: 'ElDropdown',

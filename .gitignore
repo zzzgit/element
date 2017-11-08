@@ -7,9 +7,11 @@ lerna-debug.log.*
 lib
 .idea
 examples/element-ui
+examples/jade-ui
 examples/pages/en-US
 examples/pages/zh-CN
 fe.element/element-ui
+fe.element/jade-ui
 .npmrc
 coverage
 waiter.config.js

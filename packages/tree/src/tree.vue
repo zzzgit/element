@@ -17,8 +17,8 @@
 <script>
   import TreeStore from './model/tree-store';
   import ElTreeNode from './tree-node.vue';
-  import {t} from 'element-ui/src/locale';
-  import emitter from 'element-ui/src/mixins/emitter';
+  import {t} from 'jade-ui/src/locale';
+  import emitter from 'jade-ui/src/mixins/emitter';
 
   export default {
     name: 'ElTree',

@@ -31,8 +31,8 @@
 </template>
 <script>
   import AsyncValidator from 'async-validator';
-  import emitter from 'element-ui/src/mixins/emitter';
-  import { noop, getPropByPath } from 'element-ui/src/utils/util';
+  import emitter from 'jade-ui/src/mixins/emitter';
+  import { noop, getPropByPath } from 'jade-ui/src/utils/util';
 
   export default {
     name: 'ElFormItem',

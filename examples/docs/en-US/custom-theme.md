@@ -14,9 +14,9 @@ The above website enables you to preview theme of a new theme color in real-time
 $--color-primary: teal;
 
 /* icon font path, required */
-$--font-path: '../node_modules/element-ui/lib/theme-chalk/fonts';
+$--font-path: '../node_modules/jade-ui/lib/theme-chalk/fonts';
 
-@import "../node_modules/element-ui/packages/theme-chalk/src/index";
+@import "../node_modules/jade-ui/packages/theme-chalk/src/index";
 ```
 
 Then in the entry file of your project, import this style file instead of Element's built CSS:
@@ -112,11 +112,11 @@ If you are using `babel-plugin-component` for on-demand import, just modify `.ba
 {
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "jade-ui",
       "styleLibraryName": "~theme"
     }
   ]]]
 }
 ```
 
-If you are unfamiliar with `babel-plugin-component`, please refer to <a href="./#/en-US/component/quickstart">Quick Start</a>. For more details, check out the [project repository](https://github.com/ElementUI/element-theme) of `element-theme`.
+If you are unfamiliar with `babel-plugin-component`, please refer to <a href="./#/en-US/component/quickstart">Quick Start</a>. For more details, check out the [project repository](https://github.com/ElementUI/element-theme) of `jade-theme`.
