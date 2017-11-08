@@ -51,8 +51,8 @@ module.exports = cooking.resolve();
     "component"
   ],
   "main": "./lib/index.js",
-  "repository": "https://github.com/ElemeFE/element/tree/master/packages/${componentname}",
-  "author": "elemefe",
+  "repository": "https://github.com/zzzgit/element/tree/master/packages/${componentname}",
+  "author": "zzzgit",
   "license": "MIT",
   "dependencies": {}
 }`

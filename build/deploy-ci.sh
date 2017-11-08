@@ -1,7 +1,7 @@
 #! /bin/sh
 mkdir temp_web
-git config --global user.name "element-bot"
-git config --global user.email "wallement@gmail.com"
+git config user.name "jonkee"
+git config user.email "zzzgoo@gmail.com"
 
 if [ "$ROT_TOKEN" = "" ]; then
   echo "Bye~"

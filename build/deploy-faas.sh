@@ -2,7 +2,7 @@
 mkdir temp_web
 npm run deploy:build
 cd temp_web
-git clone -b gh-pages https://github.com/ElemeFE/element.git && cd element
+git clone -b gh-pages https://github.com/zzzgit/jade-ui.git && cd element
 
 # build sub folder
 SUB_FOLDER='2.0'
@@ -15,4 +15,4 @@ cd ../..
 
 # deploy domestic site
 faas deploy alpha
-rm -rf temp_web
+    rm -rf temp_web
