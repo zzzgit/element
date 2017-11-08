@@ -28,8 +28,8 @@ You can import Element entirely, or just import what you need. Let's start with 
 In main.js:
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'jade-ui'
+import 'jade-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 
 Vue.use(ElementUI)
