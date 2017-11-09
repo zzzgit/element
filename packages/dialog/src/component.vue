@@ -32,6 +32,7 @@
   import Popup from 'jade-ui/src/utils/popup';
   import Migrating from 'jade-ui/src/mixins/migrating';
   import emitter from 'jade-ui/src/mixins/emitter';
+  import Draggabilly from 'draggabilly';
 
   export default {
     name: 'ElDialog',
@@ -96,6 +97,10 @@
       center: {
         type: Boolean,
         default: false
+      },
+      draggabel: {
+        type: Boolean,
+        default: true
       }
     },
 
@@ -118,9 +123,26 @@
           if (this.appendToBody) {
             document.body.appendChild(this.$el);
           }
+          if (this.draggabel) {
+            this.$nextTick(function(params) {
+              var draggie = new Draggabilly(this.$refs['dialog'], {
+                handle: '.el-dialog__header'
+              });
+            });
+          }
         } else {
           this.$el.removeEventListener('scroll', this.updatePopper);
           if (!this.closed) this.$emit('close');
+        }
+      },
+      draggabel(val) {
+        if (!this.$refs['dialog'] || !this.$refs['dialog'].$el) {
+          return null;
+        }
+        if (val) {
+          var draggie = new Draggabilly(this.$refs['dialog'], {
+            // options...// options...
+          });
         }
       }
     },
