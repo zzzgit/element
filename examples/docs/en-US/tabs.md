@@ -2,7 +2,7 @@
   export default {
     data() {
       return {
-        activeName: 'second',
+        activeName: "second",
         activeName2: 'first',
         editableTabsValue: '2',
         editableTabsValue2: '2',

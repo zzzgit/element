@@ -18,7 +18,8 @@
       tabPosition: {
         type: String,
         default: 'top'
-      }
+      },
+      token: String
     },
 
     provide() {
@@ -29,7 +30,7 @@
 
     data() {
       return {
-        currentName: this.value || this.activeName,
+        currentName: this.value || this.activeName || new URL(window.location.href).searchParams.get(this.token),
         panes: []
       };
     },
@@ -68,6 +69,9 @@
       },
       setCurrentName(value) {
         this.currentName = value;
+        let url = new URL(window.location.href);
+        this.token && url.searchParams.set(this.token, value);
+        window.history.pushState(null, document.title, url.toString());
         this.$emit('input', value);
       },
       addPanes(item) {
