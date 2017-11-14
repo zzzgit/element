@@ -66,7 +66,7 @@ import emitter from 'jade-ui/src/mixins/emitter';
 import Locale from 'jade-ui/src/mixins/locale';
 import { t } from 'jade-ui/src/locale';
 import debounce from 'throttle-debounce/debounce';
-import { generateId } from 'element-ui/src/utils/util';
+import { generateId } from 'jade-ui/src/utils/util';
 
 const popperMixin = {
   props: {
