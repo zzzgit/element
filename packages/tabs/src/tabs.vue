@@ -153,7 +153,7 @@
     created() {
       if (this.token) {
         let name = this.value || this.activeName || new URL(window.location.href).searchParams.get(this.token) || 0;
-        if (!name || !this.$slots.default.find(item=>item.componentOptions.propsData.name === name)) {
+        if (!name || !this.$slots.default.find(item=>(item.tag && item.tag.includes('ElTabPane') && (item.componentOptions.propsData.name === name)))) {
           name = this.$slots.default.length ? this.$slots.default[0].componentOptions.propsData.name : name;
         }
         this.setCurrentName(name);
