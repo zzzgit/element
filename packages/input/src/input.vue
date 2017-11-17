@@ -77,7 +77,6 @@
 </template>
 <script>
   import emitter from 'jade-ui/src/mixins/emitter';
-  import Focus from 'jade-ui/src/mixins/focus';
   import Migrating from 'jade-ui/src/mixins/migrating';
   import calcTextareaHeight from './calcTextareaHeight';
   import merge from 'jade-ui/src/utils/merge';
@@ -87,7 +86,7 @@
 
     componentName: 'ElInput',
 
-    mixins: [emitter, Focus('input'), Migrating],
+    mixins: [emitter, Migrating],
 
     inject: {
       elForm: {
@@ -183,6 +182,9 @@
     },
 
     methods: {
+      focus() {
+        (this.$refs.input || this.$refs.textarea).focus();
+      },
       getMigratingConfig() {
         return {
           props: {
@@ -201,7 +203,7 @@
         }
       },
       inputSelect() {
-        this.$refs.input.select();
+        (this.$refs.input || this.$refs.textarea).select();
       },
       resizeTextarea() {
         if (this.$isServer) return;
