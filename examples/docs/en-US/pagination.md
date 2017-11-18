@@ -59,6 +59,7 @@ If you have too much data to display in one page, use pagination.
 <div class="block">
   <span class="demonstration">When you have few pages</span>
   <el-pagination
+    token="demo"
     layout="prev, pager, next"
     :total="50">
   </el-pagination>
