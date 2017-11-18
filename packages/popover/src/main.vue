@@ -45,6 +45,10 @@ export default {
     reference: {},
     popperClass: String,
     width: {},
+    canCloseOnClick: {
+      type: Boolean,
+      default: false
+    },
     visibleArrow: {
       default: true
     },
@@ -120,6 +124,9 @@ export default {
   },
 
   methods: {
+    close() {
+      this.doClose();
+    },
     doToggle() {
       this.showPopper = !this.showPopper;
     },
@@ -174,7 +181,9 @@ export default {
         reference.contains(e.target) ||
         !popper ||
         popper.contains(e.target)) return;
-      this.showPopper = false;
+      if (this.canCloseOnClick) {
+        this.showPopper = false;
+      }
     }
   },
 
