@@ -50,6 +50,8 @@ export default {
 
     nextText: String,
 
+    token: String,
+
     background: Boolean,
 
     disabled: Boolean
@@ -327,7 +329,13 @@ export default {
       } else if (resetValue === 0) {
         resetValue = 1;
       }
-
+      if (this.token) {
+        let url = new URL(window.location.href);
+        url.searchParams.set(this.token, resetValue === undefined ? value : resetValue);
+        this.$nextTick(_ => {
+          window.history.pushState(null, document.title, url.toString());
+        });
+      }
       return resetValue === undefined ? value : resetValue;
     },
 
@@ -386,6 +394,15 @@ export default {
         this.userChangePageSize && this.emitChange();
       }
       this.userChangePageSize = false;
+    }
+  },
+  mounted() {
+    if (this.token) {
+      let url = new URL(window.location.href);
+      let page = url.searchParams.get(this.token);
+      if (page) {
+        this.internalCurrentPage = +page;
+      }
     }
   }
 };
