@@ -10,7 +10,7 @@
 
     props: {
       type: String,
-      activeName: String,
+      activeName: String, // no use any more
       closable: Boolean,
       addable: Boolean,
       value: {},
@@ -19,6 +19,7 @@
         type: String,
         default: 'top'
       },
+      token: String,
       beforeLeave: Function,
       stretch: Boolean
     },
@@ -85,6 +86,11 @@
       },
       setCurrentName(value) {
         const changeCurrentName = () => {
+          let url = new URL(window.location.href);
+          if (this.token) {
+            url.searchParams.set(this.token, value);
+            window.history.pushState(null, document.title, url.toString());
+          }
           this.currentName = value;
           this.$emit('input', value);
         };
@@ -169,6 +175,18 @@
     },
   
     created() {
+      if (this.token && this.$slots.default) {
+        let name = new URL(window.location.href).searchParams.get(this.token) || this.value || this.activeName || 0;
+        if (!name || !this.$slots.default.find(item=>(item.tag && item.tag.includes('ElTabPane') && (item.componentOptions.propsData.name === name)))) {
+          if (this.$slots.default.length) {
+            let first = this.$slots.default.find(item=>item.componentOptions);
+            if (first) {
+              name = first.componentOptions.propsData.name;
+            }
+          }
+        }
+        this.setCurrentName(name);
+      }
       if (!this.currentName) {
         this.setCurrentName('0');
       }
