@@ -13,6 +13,7 @@
         role="tooltip"
         :id="tooltipId"
         :aria-hidden="(disabled || !showPopper) ? 'true' : 'false'"
+				@click="popoverClick_cb"
       >
         <div class="el-popover__title" v-if="title" v-text="title"></div>
         <slot>{{ content }}</slot>
@@ -148,6 +149,15 @@ export default {
     doClose() {
       this.showPopper = false;
     },
+    popoverClick_cb(e) {
+      if (e.path && e.path.length) {
+        e.path.forEach(tag=>{
+          if (tag.tagName && tag.tagName === 'BUTTON') {
+            this.doClose();
+          }
+        });
+      }
+    },
     handleFocus() {
       addClass(this.referenceElm, 'focusing');
       if (this.trigger === 'click' || this.trigger === 'focus') this.showPopper = true;
@@ -192,7 +202,7 @@ export default {
         this.$el.contains(e.target) ||
         reference.contains(e.target) ||
         !popper ||
-        popper.contains(e.target)) return;
+				popper.contains(e.target)) return;
       this.showPopper = false;
     },
     handleAfterEnter() {
