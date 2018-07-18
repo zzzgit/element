@@ -700,6 +700,12 @@ export default {
       if (this.showClose) {
         this.valueOnOpen = this.value;
         event.stopPropagation();
+        if (['daterange', 'datetimerange'].includes(this.type)) {
+          this.emitInput([]);
+          this.emitChange([]);
+          this.showClose = false;
+          return null;
+        }
         this.emitInput(null);
         this.emitChange(null);
         this.showClose = false;
