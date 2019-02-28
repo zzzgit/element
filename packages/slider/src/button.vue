@@ -162,6 +162,7 @@
         }
         if (this.vertical) {
           this.startY = event.clientY;
+          this.startX = event.clientX;
         } else {
           this.startX = event.clientX;
         }
@@ -182,6 +183,10 @@
           if (this.vertical) {
             this.currentY = event.clientY;
             diff = (this.startY - this.currentY) / this.$parent.sliderSize * 100;
+            if (this.$parent.isRotated) {
+              this.currentX = event.clientX;
+              diff = (this.currentX - this.startX) / this.$parent.sliderSize * 100;
+            }
           } else {
             this.currentX = event.clientX;
             diff = (this.currentX - this.startX) / this.$parent.sliderSize * 100;
