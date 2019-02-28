@@ -73,6 +73,11 @@
     },
 
     props: {
+      isRotated: {
+        type: Boolean,
+        default: false,
+        required: false
+      },
       min: {
         type: Number,
         default: 0
