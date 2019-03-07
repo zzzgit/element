@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import Element from 'main/index.js';
+import jade from 'main/index.js';
 
-Vue.use(Element);
+Vue.use(jade);
 
 let id = 0;
 
@@ -59,7 +59,7 @@ export const createTest = function(Compo, propsData = {}, mounted = false) {
 /**
  * 触发一个事件
  * mouseenter, mouseleave, mouseover, keyup, change, click 等
- * @param  {Element} elm
+ * @param  {jade} elm
  * @param  {String} name
  * @param  {*} opts
  */
@@ -85,7 +85,7 @@ export const triggerEvent = function(elm, name, ...opts) {
 
 /**
  * 触发 “mouseup” 和 “mousedown” 事件
- * @param {Element} elm
+ * @param {jade} elm
  * @param {*} opts
  */
 export const triggerClick = function(elm, ...opts) {
@@ -97,7 +97,7 @@ export const triggerClick = function(elm, ...opts) {
 
 /**
  * 触发 keydown 事件
- * @param {Element} elm
+ * @param {jade} elm
  * @param {keyCode} int
  */
 export const triggerKeyDown = function(el, keyCode) {

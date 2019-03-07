@@ -1,19 +1,19 @@
-# element-steps
-> A element-steps component for Vue.js.
+# jade-steps
+> A jade-steps component for Vue.js.
 
 ## Demo
-http://element-component.github.io/element-steps
+http://jade-component.github.io/jade-steps
 
 ## Installation
 ```shell
-npm i element-steps -D
+npm i jade-steps -D
 ```
 
 ## Usage
 ```javascript
 import Vue from 'vue'
-import ElStep from 'element-steps'
-import 'element-theme-chalk/dist/step.css'
+import ElStep from 'jade-steps'
+import 'jade-theme-chalk/dist/step.css'
 
 Vue.use(ElStep)
 ```
@@ -22,7 +22,7 @@ or
 
 ```javascript
 import Vue from 'vue'
-import { ElSteps, ElStep } from 'element-steps'
+import { ElSteps, ElStep } from 'jade-steps'
 
 Vue.component('el-steps', ElSteps)
 Vue.component('el-step', ElStep)
@@ -44,7 +44,7 @@ Vue.component('el-step', ElStep)
 |---------- |-------- |---------- |-------------  |-------- |
 | title | 标题 | string | — | — |
 | description | 描述性文字 | string | — | — |
-| icon | 图标 | Element Icon 提供的图标，如果要使用自定义图标可以通过 slot 方式写入 | string | — |
+| icon | 图标 | jade Icon 提供的图标，如果要使用自定义图标可以通过 slot 方式写入 | string | — |
 
 ### Step Slot
 | name | 说明  |

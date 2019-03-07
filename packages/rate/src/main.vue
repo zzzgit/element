@@ -33,8 +33,8 @@
 </template>
 
 <script>
-  import { hasClass } from 'element-ui/src/utils/dom';
-  import Migrating from 'element-ui/src/mixins/migrating';
+  import { hasClass } from 'jade-ui/src/utils/dom';
+  import Migrating from 'jade-ui/src/mixins/migrating';
 
   export default {
     name: 'ElRate',

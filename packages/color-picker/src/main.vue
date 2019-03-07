@@ -33,8 +33,8 @@
 <script>
   import Color from './color';
   import PickerDropdown from './components/picker-dropdown.vue';
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Clickoutside from 'jade-ui/src/utils/clickoutside';
+  import Emitter from 'jade-ui/src/mixins/emitter';
 
   export default {
     name: 'ElColorPicker',
@@ -76,7 +76,7 @@
       },
 
       colorSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.size || this._elFormItemSize || (this.$jade || {}).size;
       },
 
       colorDisabled() {

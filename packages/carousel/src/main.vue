@@ -51,7 +51,7 @@
 
 <script>
 import throttle from 'throttle-debounce/throttle';
-import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
+import { addResizeListener, removeResizeListener } from 'jade-ui/src/utils/resize-event';
 
 export default {
   name: 'ElCarousel',
@@ -202,7 +202,7 @@ export default {
       index = Number(index);
       if (isNaN(index) || index !== Math.floor(index)) {
         process.env.NODE_ENV !== 'production' &&
-        console.warn('[Element Warn][Carousel]index must be an integer.');
+        console.warn('[jade Warn][Carousel]index must be an integer.');
         return;
       }
       let length = this.items.length;

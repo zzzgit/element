@@ -4,7 +4,7 @@
 
 Similar a un Tooltip, Popover está construido con `Vue-popper`. Así que para atributos duplicados, por favor refiérase a la documentación de Tooltip.
 
-:::demo El atributo `trigger` es usado para definir como el popover se dispara: `hover`, `click`, `focus` o `manual`. As for the triggering element, you can write it in two different ways: use the `slot="reference"` [named slot](https://vuejs.org/v2/guide/components.html#Named-Slots), or use the `v-popover` directive and set it to Popover's `ref`.
+:::demo El atributo `trigger` es usado para definir como el popover se dispara: `hover`, `click`, `focus` o `manual`. As for the triggering jade, you can write it in two different ways: use the `slot="reference"` [named slot](https://vuejs.org/v2/guide/components.html#Named-Slots), or use the `v-popover` directive and set it to Popover's `ref`.
 
 ```html
 <template>
@@ -147,7 +147,7 @@ Por supuesto, puedes anidar otras operaciones. Es más ligero que utilizar un `d
 | value / v-model | si el popover está visible               | Boolean        | —                                        | false                                    |
 | offset         | popover offset                           | number         | —                                        | 0                                        |
 | transition     | popover transition animation             | string         | —                                        | el-fade-in-linear                        |
-| visible-arrow  | si una flecha del tooltip es mostrada o no. Para más información, por favor refiérase a [Vue-popper](https://github.com/element-component/vue-popper) | boolean        | —                                        | true                                     |
+| visible-arrow  | si una flecha del tooltip es mostrada o no. Para más información, por favor refiérase a [Vue-popper](https://github.com/jade-component/vue-popper) | boolean        | —                                        | true                                     |
 | popper-options | parámetros para [popper.js](https://popper.js.org/documentation.html) | object         | por favor, refiérase a [popper.js](https://popper.js.org/documentation.html) | `{ boundariesElement: 'body', gpuAcceleration: false }` |
 | popper-class   | clase propia para popover                | string         | —                                        | —                                        |
 | open-delay     | retraso de la aparición cuando `trigger` es hover, en milisegundos | number         | —                                        | —                                        |

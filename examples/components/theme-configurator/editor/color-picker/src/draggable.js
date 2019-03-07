@@ -1,7 +1,7 @@
 import Vue from 'vue';
 let isDragging = false;
 
-export default function(element, options) {
+export default function(jade, options) {
   if (Vue.prototype.$isServer) return;
   const moveFn = function(event) {
     if (options.drag) {
@@ -20,7 +20,7 @@ export default function(element, options) {
       options.end(event);
     }
   };
-  element.addEventListener('mousedown', function(event) {
+  jade.addEventListener('mousedown', function(event) {
     if (isDragging) return;
     document.onselectstart = function() { return false; };
     document.ondragstart = function() { return false; };

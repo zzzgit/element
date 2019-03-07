@@ -54,7 +54,7 @@ Dialog abre una caja de diálogo, y es bastante personalizable.
 ### Personalizaciones
 
 
-El contenido del Diálogo puede ser cualquier cosa, incluso una tabla o un formulario. Este ejemplo muestra cómo usar Element Table y Form con Dialog
+El contenido del Diálogo puede ser cualquier cosa, incluso una tabla o un formulario. Este ejemplo muestra cómo usar jade Table y Form con Dialog
 
 :::demo
 

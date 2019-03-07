@@ -136,7 +136,7 @@
 
     @include m(extensible) {
       &:after {
-        font-family: 'element-icons';
+        font-family: 'jade-icons';
         content: "\e604";
         font-size: 14px;
         color: rgb(191, 203, 217);

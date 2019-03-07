@@ -44,7 +44,7 @@
   </label>
 </template>
 <script>
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Emitter from 'jade-ui/src/mixins/emitter';
 
   export default {
     name: 'ElCheckboxButton',
@@ -147,7 +147,7 @@
       },
 
       size() {
-        return this._checkboxGroup.checkboxGroupSize || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this._checkboxGroup.checkboxGroupSize || this._elFormItemSize || (this.$jade || {}).size;
       },
 
       isDisabled() {

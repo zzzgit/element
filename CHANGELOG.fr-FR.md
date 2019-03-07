@@ -54,7 +54,7 @@
   - Update custom-theme docs (by @wangguohao in #14297)
   - Make the icon style change when hover on it (by @tuxinghuan in #14295)
 - Build
-  - Minimizing css and js for Element doc site (by @iamkun in #14430)
+  - Minimizing css and js for jade doc site (by @iamkun in #14430)
   - Speeding up webpack (by @hetech in #14484)
   - Use cli to select release version (by @hetech in #14354)
 - Install stale for issue handling (by @island205 in #14392)
@@ -692,7 +692,7 @@
 
 - Ajouté la fonction de hook "avant suppression" pour Upload, #8788 (par @firesh)
 - Correction de la valeur initiale de `error` qui ne fonctionnait pas pour FormItem, #8840
-- La directive Loading prend maintenant en charge le nom de classe personnalisé grâce à l'attribut `element-loading-custom-class`, #8826 (par @earlymeme)
+- La directive Loading prend maintenant en charge le nom de classe personnalisé grâce à l'attribut `jade-loading-custom-class`, #8826 (par @earlymeme)
 - Correction CarouselItem devenant invisible lorsque les données sont mises à jour de manière asynchrone, #8921
 - Ajout de l'attribut `renderAfterExpand` pour Tree, #8972
 

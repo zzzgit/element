@@ -1,20 +1,20 @@
 ## Démarrer
 
-Cette page vous guidera tout le long de l'installation d'Element au sein d'un projet webpack.
+Cette page vous guidera tout le long de l'installation d'jade au sein d'un projet webpack.
 
 ### Use vue-cli@3
 
-Nous fournissons un [plugin Element](https://github.com/ElementUI/vue-cli-plugin-element) pour vue-cli@3, que vous pouvez utiliser pour créer rapidement un projet basé sur Element.
+Nous fournissons un [plugin jade](https://github.com/ElementUI/vue-cli-plugin-jade) pour vue-cli@3, que vous pouvez utiliser pour créer rapidement un projet basé sur jade.
 
 ### Utiliser le Starter Kit
 
-Nous fournissons un [template de projet](https://github.com/ElementUI/element-starter) pour débuter rapidement. Pour les utilisateurs Laravel, il est aussi possible d'utiliser ce [template](https://github.com/ElementUI/element-in-laravel-starter). VOus pouvez les télécharger directement.
+Nous fournissons un [template de projet](https://github.com/ElementUI/jade-starter) pour débuter rapidement. Pour les utilisateurs Laravel, il est aussi possible d'utiliser ce [template](https://github.com/ElementUI/jade-in-laravel-starter). VOus pouvez les télécharger directement.
 
 Si vous préférer vous passer de template, voyez la section suivante.
 
-### Importer Element
+### Importer jade
 
-Element peut être importé entièrement ou à la demande. Commençons par l'import total.
+jade peut être importé entièrement ou à la demande. Commençons par l'import total.
 
 #### Import total
 
@@ -22,8 +22,8 @@ Dans main.js:
 
 ```javascript
 import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'jade-ui';
+import 'jade-ui/lib/theme-chalk/index.css';
 import App from './App.vue';
 
 Vue.use(ElementUI);
@@ -34,7 +34,7 @@ new Vue({
 });
 ```
 
-L'exemple ci-dessus importe Element entièrement. Notez que les fichiers CSS doivent être importés séparément.
+L'exemple ci-dessus importe jade entièrement. Notez que les fichiers CSS doivent être importés séparément.
 
 #### À la demande
 
@@ -55,7 +55,7 @@ Puis éditez .babelrc:
     [
       "component",
       {
-        "libraryName": "element-ui",
+        "libraryName": "jade-ui",
         "styleLibraryName": "theme-chalk"
       }
     ]
@@ -67,7 +67,7 @@ Ensuite, si vous n'avez besoin que de Button et Select, éditez main.js comme su
 
 ```javascript
 import Vue from 'vue';
-import { Button, Select } from 'element-ui';
+import { Button, Select } from 'jade-ui';
 import App from './App.vue';
 
 Vue.component(Button.name, Button);
@@ -83,7 +83,7 @@ new Vue({
 });
 ```
 
-Exemple complet (Liste complète des composants dans [components.json](https://github.com/ElemeFE/element/blob/master/components.json)):
+Exemple complet (Liste complète des composants dans [components.json](https://github.com/ElemeFE/jade/blob/master/components.json)):
 
 ```javascript
 import Vue from 'vue';
@@ -155,7 +155,7 @@ import {
   MessageBox,
   Message,
   Notification
-} from 'element-ui';
+} from 'jade-ui';
 
 Vue.use(Pagination);
 Vue.use(Dialog);
@@ -234,23 +234,23 @@ Vue.prototype.$message = Message;
 
 ### Configuration globale
 
-Lors de l'import d'Element, vous pouvez définir un objet de configuration global. Actuellement il possède de propriétés: `size` et `zIndex`. La propriété `size` détermine la taille par défaut de tout les composants et `zIndex` règle le z-index initial (default: 2000) des fenêtres modales:
+Lors de l'import d'jade, vous pouvez définir un objet de configuration global. Actuellement il possède de propriétés: `size` et `zIndex`. La propriété `size` détermine la taille par défaut de tout les composants et `zIndex` règle le z-index initial (default: 2000) des fenêtres modales:
 
-Import total d'Element：
+Import total d'jade：
 
 ```js
 import Vue from 'vue';
-import Element from 'element-ui';
-Vue.use(Element, { size: 'small', zIndex: 3000 });
+import jade from 'jade-ui';
+Vue.use(jade, { size: 'small', zIndex: 3000 });
 ```
 
-Import partiel d'Element：
+Import partiel d'jade：
 
 ```js
 import Vue from 'vue';
-import { Button } from 'element-ui';
+import { Button } from 'jade-ui';
 
-Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
+Vue.prototype.$jade = { size: 'small', zIndex: 3000 };
 Vue.use(Button);
 ```
 
@@ -258,12 +258,12 @@ Avec la configuration ci-dessus, la taille par défaut des composants ayant l'at
 
 ### Commencer à développer
 
-Maintenant que vous avez ajouté Vue et Element à votre projet, vous pouvez commencer à coder. Référez-vous à la documentation de chaque composant pour savoir comment les utiliser.
+Maintenant que vous avez ajouté Vue et jade à votre projet, vous pouvez commencer à coder. Référez-vous à la documentation de chaque composant pour savoir comment les utiliser.
 
 ### Utiliser Nuxt.js
 
 Vous pouvez également commencer un projet avec [Nuxt.js](https://nuxtjs.org/):
 
 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe src="https://glitch.com/embed/#!/embed/nuxt-with-element?path=nuxt.config.js&previewSize=0&attributionHidden=true" alt="nuxt-with-element on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
+  <iframe src="https://glitch.com/embed/#!/embed/nuxt-with-jade?path=nuxt.config.js&previewSize=0&attributionHidden=true" alt="nuxt-with-jade on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
 </div>

@@ -4,7 +4,7 @@ Toggleable menu for displaying lists of links and actions.
 ### Basic usage
 Hover on the dropdown menu to unfold it for more actions.
 
-:::demo The triggering element is rendered by the default `slot`, and the dropdown part is rendered by the `slot` named `dropdown`. By default, dropdown list shows when you hover on the triggering element without having to click it.
+:::demo The triggering jade is rendered by the default `slot`, and the dropdown part is rendered by the `slot` named `dropdown`. By default, dropdown list shows when you hover on the triggering jade without having to click it.
 
 ```html
 <el-dropdown>
@@ -34,11 +34,11 @@ Hover on the dropdown menu to unfold it for more actions.
 
 :::
 
-### Triggering element
+### Triggering jade
 
 Use the button to trigger the dropdown list.
 
-:::demo Use `split-button` to split the triggering element into a button group with the left button being a normal button and right one the actual triggering target. If you wanna insert a separator line between item three and item four, just add a class `divider` to item four.
+:::demo Use `split-button` to split the triggering jade into a button group with the left button being a normal button and right one the actual triggering target. If you wanna insert a separator line between item three and item four, just add a class `divider` to item four.
 ```html
 <el-dropdown>
   <el-button type="primary">
@@ -89,7 +89,7 @@ Use the button to trigger the dropdown list.
 
 ### How to trigger
 
-Click the triggering element or hover on it.
+Click the triggering jade or hover on it.
 
 :::demo Use the attribute `trigger`. By default, it is `hover`.
 
@@ -283,8 +283,8 @@ Besides default size, Dropdown component provides three additional sizes for you
 
 | Name | Description |
 |------|--------|
-| — | content of Dropdown. Notice: Must be a valid html dom element (ex. `<span>, <button> etc.`) or `el-component`, to attach the trigger listener  |
-| dropdown | content of the Dropdown Menu, usually a `<el-dropdown-menu>` element |
+| — | content of Dropdown. Notice: Must be a valid html dom jade (ex. `<span>, <button> etc.`) or `el-component`, to attach the trigger listener  |
+| dropdown | content of the Dropdown Menu, usually a `<el-dropdown-menu>` jade |
 
 ### Dropdown Events
 | Event Name | Description | Parameters |

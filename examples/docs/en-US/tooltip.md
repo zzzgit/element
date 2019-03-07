@@ -6,7 +6,7 @@ Display prompt information for mouse hover.
 
 Tooltip has 9 placements.
 
-:::demo Use attribute `content` to set the display content when hover. The attribute `placement` determines the position of the tooltip. Its value is `[orientation]-[alignment]` with four orientations `top`, `left`, `right`, `bottom` and three alignments `start`, `end`, `null`, and the default alignment is null. Take `placement="left-end"` for example, Tooltip will display on the left of the element which you are hovering and the bottom of the tooltip aligns with the bottom of the element.
+:::demo Use attribute `content` to set the display content when hover. The attribute `placement` determines the position of the tooltip. Its value is `[orientation]-[alignment]` with four orientations `top`, `left`, `right`, `bottom` and three alignments `start`, `end`, `null`, and the default alignment is null. Take `placement="left-end"` for example, Tooltip will display on the left of the jade which you are hovering and the bottom of the tooltip aligns with the bottom of the jade.
 ```html
 <div class="box">
   <div class="top">
@@ -133,7 +133,7 @@ In addition to basic usages, there are some attributes that allow you to customi
 
 `disabled` attribute allows you to disable `tooltip`. You just need set it to `true`.
 
-In fact, Tooltip is an extension based on [Vue-popper](https://github.com/element-component/vue-popper), you can use any attribute that are allowed in Vue-popper.
+In fact, Tooltip is an extension based on [Vue-popper](https://github.com/jade-component/vue-popper), you can use any attribute that are allowed in Vue-popper.
 
 :::demo
 ```html
@@ -162,7 +162,7 @@ In fact, Tooltip is an extension based on [Vue-popper](https://github.com/elemen
 :::tip
 The `router-link` component is not supported in tooltip, please use `vm.$router.push`.
 
-Disabled form elements are not supported for Tooltip, more information can be found at [MDN](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter). You need to wrap the disabled form element with a container element for Tooltip to work.
+Disabled form elements are not supported for Tooltip, more information can be found at [MDN](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter). You need to wrap the disabled form jade with a container jade for Tooltip to work.
 :::
 
 
@@ -176,7 +176,7 @@ Disabled form elements are not supported for Tooltip, more information can be fo
 |  disabled       |  whether Tooltip is disabled  | boolean    | — |  false |
 |  offset        |  offset of the Tooltip   | number    | — |  0 |
 |  transition     |  animation name | string             | — | el-fade-in-linear |
-|  visible-arrow   |  whether an arrow is displayed. For more information, check [Vue-popper](https://github.com/element-component/vue-popper) page | boolean | — | true |
+|  visible-arrow   |  whether an arrow is displayed. For more information, check [Vue-popper](https://github.com/jade-component/vue-popper) page | boolean | — | true |
 |  popper-options        | [popper.js](https://popper.js.org/documentation.html) parameters | Object            | refer to [popper.js](https://popper.js.org/documentation.html) doc | `{ boundariesElement: 'body', gpuAcceleration: false }` |
 | open-delay | delay of appearance, in millisecond | number | — | 0 |
 | manual | whether to control Tooltip manually. `mouseenter` and `mouseleave` won't have effects if set to `true` | boolean | — | false |

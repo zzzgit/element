@@ -312,10 +312,10 @@ Taking example by Bootstrap's responsive design, five breakpoints are preset: xs
 
 ### Utility classes for hiding elements
 
-Additionally, Element provides a series of classes for hiding elements under certain conditions. These classes can be added to any DOM elements or custom components. You need to import the following CSS file to use these classes:
+Additionally, jade provides a series of classes for hiding elements under certain conditions. These classes can be added to any DOM elements or custom components. You need to import the following CSS file to use these classes:
 
 ```js
-import 'element-ui/lib/theme-chalk/display.css';
+import 'jade-ui/lib/theme-chalk/display.css';
 ```
 
 The classes are:
@@ -338,7 +338,7 @@ The classes are:
 | type | layout mode, you can use flex, works in modern browsers | string | — | — |
 | justify | horizontal alignment of flex layout | string | start/end/center/space-around/space-between | start |
 | align | vertical alignment of flex layout | string | top/middle/bottom | top |
-| tag | custom element tag | string | * | div |
+| tag | custom jade tag | string | * | div |
 
 ### Col Attributes
 | Attribute      | Description          | Type      | Accepted Values       | Default  |
@@ -352,6 +352,6 @@ The classes are:
 | md | `≥992px` Responsive columns or column props object | number/object (e.g. {span: 4, offset: 4}) | — | — |
 | lg | `≥1200px` Responsive columns or column props object | number/object (e.g. {span: 4, offset: 4}) | — | — |
 | xl | `≥1920px` Responsive columns or column props object | number/object (e.g. {span: 4, offset: 4}) | — | — |
-| tag | custom element tag | string | * | div |
+| tag | custom jade tag | string | * | div |
 
 

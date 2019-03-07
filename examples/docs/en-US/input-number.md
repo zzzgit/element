@@ -4,7 +4,7 @@ Input numerical values with a customizable range.
 
 ### Basic usage
 
-:::demo Bind a variable to `v-model` in `<el-input-number>` element and you are set.
+:::demo Bind a variable to `v-model` in `<el-input-number>` jade and you are set.
 
 ```html
 <template>
@@ -175,5 +175,5 @@ Use attribute `size` to set additional sizes with `medium`, `small` or `mini`.
 | Method | Description | Parameters |
 |------|--------|-------|
 | focus | focus the Input component | - |
-| select | select the text in input element | — |
+| select | select the text in input jade | — |
 

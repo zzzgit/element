@@ -54,7 +54,7 @@
   - Update custom-theme docs (by @wangguohao in #14297)
   - Make the icon style change when hover on it (by @tuxinghuan in #14295)
 - Build
-  - Minimizing css and js for Element doc site (by @iamkun in #14430)
+  - Minimizing css and js for jade doc site (by @iamkun in #14430)
   - Speeding up webpack (by @hetech in #14484)
   - Use cli to select release version (by @hetech in #14354)
 - Install stale for issue handling (by @island205 in #14392)
@@ -401,7 +401,7 @@
 - Input
   - Fixed an issue that causes a re-render when using the Chinese IME to quickly input text, #11235 (by @STLighter)
 - Popover
-  - Fixed the console error when the triggering element is Radio or Checkbox, #11265
+  - Fixed the console error when the triggering jade is Radio or Checkbox, #11265
 - Breadcrumb
   - Fixed the `to` attribute not supporting dynamic update, #11286
 - Upload
@@ -427,7 +427,7 @@
 *2018-05-18*
 
 - Fixed when the source data does not have the field specified by a TableColumn's `prop` attribute, an error would occur when the mouse moves into that column's cells, #11137
-- The `lockScroll` attribute of pop up components no longer adds an inline style to the parent element, but instead adds a class name, #11114
+- The `lockScroll` attribute of pop up components no longer adds an inline style to the parent jade, but instead adds a class name, #11114
 - Fixed the icon of Progress not displaying when its `status` is exception, #11172
 - Fixed options' `disabled` attribute not working in filterable Cascader's filter result list, #11185
 - Fixed an issue where Table's expanded row cannot be collapsed if the data source is updated after its expansion, #11186
@@ -474,7 +474,7 @@
 - Added `prev-click` and `next-click` events for Pagination, #10755
 - Added `pager-count` attribute for Pagination, #10493 (by @chongjohn716)
 - Added `type` as the 3rd param of Tree's `allow-drop` attribute callback, #10792
-- Now we use ResizeObserver to detect DOM element resizing, #10779
+- Now we use ResizeObserver to detect DOM jade resizing, #10779
 
 ### 2.3.4
 
@@ -512,7 +512,7 @@
 
 *2018-03-29*
 
-- Fixed a regression that `type` of Input is not passed down to the native input element, #10415
+- Fixed a regression that `type` of Input is not passed down to the native input jade, #10415
 - Added `blur` method for Select, #10416
 
 ### 2.3.0 Diamond
@@ -692,7 +692,7 @@
 
 - Added `before-remove` hook function for Upload, #8788 (by @firesh)
 - Fixed initial value of `error` not working for FormItem, #8840
-- Now Loading directive supports custom class name by assigning `element-loading-custom-class` attribute, #8826 (by @earlymeme)
+- Now Loading directive supports custom class name by assigning `jade-loading-custom-class` attribute, #8826 (by @earlymeme)
 - Fixed CarouselItem becoming invisible when data is asynchronously updated, #8921
 - Added `renderAfterExpand` attribute for Tree, #8972
 
@@ -787,7 +787,7 @@
   - All existing icons are redesigned. Some new icons are added
   - Added a series of breakpoint-based utility classes that hide elements when the viewport size meets certain conditions
   - Added layout components: Container, Header, Aside, Main, Footer
-  - Now you can configure component sizes globally. When importing Element, you can add a global config object with a `size` prop to configure default sizes for all components.
+  - Now you can configure component sizes globally. When importing jade, you can add a global config object with a `size` prop to configure default sizes for all components.
 - Button
   - Added `round` attribute. It's used for round-cornered Buttons #6643
 - TimeSelect
@@ -897,8 +897,8 @@
 - Select
   - Improved performance. Now Vue dev-tool won't crash when a large number of Selects are destroyed #6151
 - Table
-  - Fixed a bug that Table remains hiding when its parent element appears from `display: none`
-  - Fixed Table expanding its width when its parent element has `display: flex`
+  - Fixed a bug that Table remains hiding when its parent jade appears from `display: none`
+  - Fixed Table expanding its width when its parent jade has `display: flex`
   - Fixed a bug that fixed columns of a Table with `append` slot would disappear when data is dynamically fetched
   - Fixed `expand-row-keys` attribute not working with initial value
   - Fixed filter failing when `data` updates
@@ -933,7 +933,7 @@
 - Input
   - Removed `icon` attribute. Now the suffix icon can be configured using `suffix-icon` attribute or `suffix` named slot
   - Removed `on-icon-click` attribute and `click` event. Now to add click handler on icons, please use named slots
-  - `change` event now behaves like the native input element, which triggers only on blur or pressing enter. If you need to respond to user input in real time, you can use `input` event.
+  - `change` event now behaves like the native input jade, which triggers only on blur or pressing enter. If you need to respond to user input in real time, you can use `input` event.
 - Autocomplete
   - Removed `custom-item` attribute. Now the template of input suggestions can be customized using `scoped slot`
   - Removed `props` attribute. Now you can use `value-key` attribute to designate key name of the input suggestion object for display
@@ -945,7 +945,7 @@
 - Table
   - Removed support for customizing column template using `inline-template`
   - `sort-method` now aligns with `Array.sort`. It should return a number instead of a boolean
-  - `append` slot is moved outside the `tbody` element to avoid multiple rendering
+  - `append` slot is moved outside the `tbody` jade to avoid multiple rendering
   - `expand` event is renamed to `expand-change`
   - The params of `row-class-name` and `row-style` method is now an object
 

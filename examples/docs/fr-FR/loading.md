@@ -6,7 +6,7 @@ Affiche une animation durant le chargement de données.
 
 Affiche une animation dans un conteneur (Comme un tableau par exemple) pendant le chargement des données.
 
-:::demo Element fournit deux moyens d'invoquer Loading: la directive et le service. Pour la directive `v-loading`, attachez simplement un `boolean`. Par défaut le masque sera ajouté à l'élément contenant la directive. Ajoutez le modificateur `body` pour ajouter le masque à l'élément body.
+:::demo jade fournit deux moyens d'invoquer Loading: la directive et le service. Pour la directive `v-loading`, attachez simplement un `boolean`. Par défaut le masque sera ajouté à l'élément contenant la directive. Ajoutez le modificateur `body` pour ajouter le masque à l'élément body.
 
 ```html
 <template>
@@ -66,14 +66,14 @@ Affiche une animation dans un conteneur (Comme un tableau par exemple) pendant l
 
 Vous pouvez personnaliser le texte, le spinner et la couleur de fond.
 
-:::demo Ajoutez l'attribut `element-loading-text` à l'élement sur lequel `v-loading` est attaché et sa valeur sera affichée sous le spinner. De la même façon, `element-loading-spinner` et `element-loading-background` permettent de personnaliser le spinner et la couleur de fond.
+:::demo Ajoutez l'attribut `jade-loading-text` à l'élement sur lequel `v-loading` est attaché et sa valeur sera affichée sous le spinner. De la même façon, `jade-loading-spinner` et `jade-loading-background` permettent de personnaliser le spinner et la couleur de fond.
 ```html
 <template>
   <el-table
     v-loading="loading2"
-    element-loading-text="Loading..."
-    element-loading-spinner="el-icon-loading"
-    element-loading-background="rgba(0, 0, 0, 0.8)"
+    jade-loading-text="Loading..."
+    jade-loading-spinner="el-icon-loading"
+    jade-loading-background="rgba(0, 0, 0, 0.8)"
     :data="tableData"
     style="width: 100%">
     <el-table-column
@@ -175,7 +175,7 @@ Affichez une animation en plein écran quand vous charger des données.
 Vous pouvez invoquer Loading comme un service. Importez le service Loading:
 
 ```javascript
-import { Loading } from 'element-ui';
+import { Loading } from 'jade-ui';
 ```
 Et invoquer-le:
 
@@ -202,7 +202,7 @@ console.log(loadingInstance1 === loadingInstance2); // true
 
 Appeler la méthode `close` sur n'importe lequel des deux fermera le Loading.
 
-Si Element est importé en entier, une méthode globale `$loading` sera ajoutée à Vue.prototype. Vous pourrez l'invoquer comme ceci: `this.$loading(options)` et elle retournera une instance Loading.
+Si jade est importé en entier, une méthode globale `$loading` sera ajoutée à Vue.prototype. Vous pourrez l'invoquer comme ceci: `this.$loading(options)` et elle retournera une instance Loading.
 
 ### Options
 

@@ -5,18 +5,18 @@
 Instalar mediante npm es la forma recomendada ya que se integra facilmente con [webpack](https://webpack.js.org/).
 
 ```shell
-npm i element-ui -S
+npm i jade-ui -S
 ```
 
 ### CDN
 
-Obtenga la última versión desde [unpkg.com/element-ui](https://unpkg.com/element-ui/) , e importe el JavaScript y los archivos CSS en su página.
+Obtenga la última versión desde [unpkg.com/jade-ui](https://unpkg.com/jade-ui/) , e importe el JavaScript y los archivos CSS en su página.
 
 ```html
 <!-- import CSS -->
-<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<link rel="stylesheet" href="https://unpkg.com/jade-ui/lib/theme-chalk/index.css">
 <!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/jade-ui/lib/index.js"></script>
 ```
 
 ##Tip
@@ -24,7 +24,7 @@ Recomendamos a nuestros usuarios congelar la versión de Elemet cuando usas un C
 
 ### Hello world
 
-Si esta usando un CDN, una página con Hello-World es fácil con Element. [Online Demo](https://jsfiddle.net/hzfpyvg6/14/)
+Si esta usando un CDN, una página con Hello-World es fácil con jade. [Online Demo](https://jsfiddle.net/hzfpyvg6/14/)
 
 <iframe width="100%" height="600" src="//jsfiddle.net/hzfpyvg6/1213/embedded/html,result/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 

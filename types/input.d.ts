@@ -92,7 +92,7 @@ export declare class ElInput extends ElementUIComponent {
   blur (): void
 
   /**
-   * Select the text in input element
+   * Select the text in input jade
    */
   select (): void
 }

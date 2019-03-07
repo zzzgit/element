@@ -354,7 +354,7 @@ Vous pouvez obtenir de l'aide ou des suggestions basées sur ce que vous entrez.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -438,7 +438,7 @@ Vous pouvez personnaliser la manière dont les suggestions sont affichées.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -486,7 +486,7 @@ Vous pouvez aller chercher des infos de suggestions sur un serveur distant.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -524,7 +524,7 @@ Vous pouvez aller chercher des infos de suggestions sur un serveur distant.
 
 | Attribut      | Description          | Type      | Valeurs acceptées       | Défaut  |
 | ----| ----| ----| ---- | ----- |
-| type| Type de l'input. | string | text, textarea et autres [types d'input natifs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types) | text |
+| type| Type de l'input. | string | text, textarea et autres [types d'input natifs](https://developer.mozilla.org/en-US/docs/Web/HTML/jade/input#Form_%3Cinput%3E_types) | text |
 | value / v-model | Variable liée. | string / number | — | — |
 | maxlength| Identique à `maxlength` dans l'input natif. | number| — | — |
 | minlength| Identique à `minlength` dans l'input natif. | number | — | — |

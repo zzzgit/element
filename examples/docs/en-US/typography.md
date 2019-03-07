@@ -91,42 +91,42 @@ We create a font convention to ensure the best presentation across different pla
     >
       <td>Supplementary text</td>
       <td class="color-dark-light">{{font_size_extra_small}} Extra Small</td>
-      <td>Build with Element</td>
+      <td>Build with jade</td>
     </tr>
     <tr
     :style="{ fontSize: font_size_small }"
     >
       <td>Body (small)</td>
       <td class="color-dark-light">{{font_size_small}} Small</td>
-      <td>Build with Element</td>
+      <td>Build with jade</td>
     </tr>
     <tr
     :style="{ fontSize: font_size_base }"
     >
       <td>Body</td>
       <td class="color-dark-light">{{font_size_base}} Base</td>
-      <td>Build with Element</td>
+      <td>Build with jade</td>
     </tr>
     <tr
     :style="{ fontSize: font_size_medium }"
     >
       <td >Small Title</td>
       <td class="color-dark-light">{{font_size_medium}} Medium</td>
-      <td>Build with Element</td>
+      <td>Build with jade</td>
     </tr>
     <tr
     :style="{ fontSize: font_size_large }"
     >
       <td>Title</td>
       <td class="color-dark-light">{{font_size_large}} large</td>
-      <td>Build with Element</td>
+      <td>Build with jade</td>
     </tr>
     <tr
     :style="{ fontSize: font_size_extra_large }"
     >
       <td>Main Title</td>
       <td class="color-dark-light">{{font_size_extra_large}} Extra large</td>
-      <td>Build with Element</td>
+      <td>Build with jade</td>
     </tr>
   </tbody>
 </table>

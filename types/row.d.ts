@@ -20,6 +20,6 @@ export declare class ElRow extends ElementUIComponent {
   /** Vertical alignment of flex layout */
   align: VertialAlignment
 
-  /** Custom element tag */
+  /** Custom jade tag */
   tag: string
 }

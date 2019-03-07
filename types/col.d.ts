@@ -41,6 +41,6 @@ export declare class ElCol extends ElementUIComponent {
   /** ≥1920px Responsive columns or column props object */
   xl: ResponsiveColumn
 
-  /** custom element tag */
+  /** custom jade tag */
   tag: string
 }

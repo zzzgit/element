@@ -167,7 +167,7 @@ Puede ser personalizado para mostrar diversos contenidos.
 
 :::tip
 
-El contenido de MessageBox puede ser `VNode`, permitiéndonos pasar componentes personalizados. Al abrir el MessageBox, Vue compara el nuevo `VNode` con el viejo `VNode`, y luego averigua cómo actualizar eficientemente la interfaz de usuario, de modo que es posible que los componentes no se vuelvan a procesar completamente ([#8931](https://github.com/ElemeFE/element/issues/8931)). En este caso, se puede añadir una clave única a `VNode` cada vez que se abre MessageBox: [ejemplo](https://jsfiddle.net/zhiyang/ezmhq2ef).
+El contenido de MessageBox puede ser `VNode`, permitiéndonos pasar componentes personalizados. Al abrir el MessageBox, Vue compara el nuevo `VNode` con el viejo `VNode`, y luego averigua cómo actualizar eficientemente la interfaz de usuario, de modo que es posible que los componentes no se vuelvan a procesar completamente ([#8931](https://github.com/ElemeFE/jade/issues/8931)). En este caso, se puede añadir una clave única a `VNode` cada vez que se abre MessageBox: [ejemplo](https://jsfiddle.net/zhiyang/ezmhq2ef).
 
 :::
 
@@ -281,7 +281,7 @@ El contenido del componente MessageBox puede ser centrado.
 
 ### Metodos Globales
 
-Si Element fue importado completamente, agregara los siguientes metodos globales para Vue.prototype: `$msgbox`, `$alert`, `$confirm` y `$prompt`. Asi que en una instancia de Vue puedes llamar el metodo `MessageBox` como lo que hicimos en esta pagina. Los parametros son:
+Si jade fue importado completamente, agregara los siguientes metodos globales para Vue.prototype: `$msgbox`, `$alert`, `$confirm` y `$prompt`. Asi que en una instancia de Vue puedes llamar el metodo `MessageBox` como lo que hicimos en esta pagina. Los parametros son:
 - `$msgbox(options)`
 - `$alert(message, title, options)` or `$alert(message, options)`
 - `$confirm(message, title, options)` or `$confirm(message, options)`
@@ -292,7 +292,7 @@ Si Element fue importado completamente, agregara los siguientes metodos globales
 Si prefieres importar `MessageBox` cuando lo necesites (on demand):
 
 ```javascript
-import { MessageBox } from 'element-ui';
+import { MessageBox } from 'jade-ui';
 ```
 
 Los metodos correspondientes: `MessageBox`, `MessageBox.alert`, `MessageBox.confirm` y `MessageBox.prompt`. Los parametros son los mismos que los anteriores.

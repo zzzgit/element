@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Emitter from 'jade-ui/src/mixins/emitter';
 
   const keyCode = Object.freeze({
     LEFT: 37,
@@ -42,7 +42,7 @@
         return (this.elFormItem || {}).elFormItemSize;
       },
       radioGroupSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.size || this._elFormItemSize || (this.$jade || {}).size;
       }
     },
 

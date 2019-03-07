@@ -98,7 +98,7 @@ A variety of custom icons can be used in the step bar.
 
 Vertical step bars.
 
-:::demo You only need to set the `direction` attribute to` vertical` in the `el-steps` element.
+:::demo You only need to set the `direction` attribute to` vertical` in the `el-steps` jade.
 
 ```html
 <div style="height: 300px;">

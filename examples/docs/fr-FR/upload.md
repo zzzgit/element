@@ -283,7 +283,7 @@ name | Identifiant du fichier. | string | — | file
 with-credentials | Si les cookies sont aussi envoyés. | boolean | — |false
 show-file-list | Si la liste des fichiers est affichée. | boolean | — | true
  drag | SI le mode drag'n drop est activé. | boolean | — | false
-accept | [Types de fichiers](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept) acceptés, ne marche pas si `thumbnail-mode` est `true`. | string | — | —
+accept | [Types de fichiers](https://developer.mozilla.org/en-US/docs/Web/HTML/jade/input#attr-accept) acceptés, ne marche pas si `thumbnail-mode` est `true`. | string | — | —
 on-preview | Fonction pour quand le fichier est cliqué. | function(file) | — | —
 on-remove | Fonction pour quand des fichiers sont supprimés. | function(file, fileList) | — | —
 on-success | Fonction pour quand l'upload a réussi. | function(response, file, fileList) | — | —

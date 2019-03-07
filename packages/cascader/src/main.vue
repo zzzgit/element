@@ -64,14 +64,14 @@
 <script>
 import Vue from 'vue';
 import ElCascaderMenu from './menu';
-import ElInput from 'element-ui/packages/input';
-import Popper from 'element-ui/src/utils/vue-popper';
-import Clickoutside from 'element-ui/src/utils/clickoutside';
-import emitter from 'element-ui/src/mixins/emitter';
-import Locale from 'element-ui/src/mixins/locale';
-import { t } from 'element-ui/src/locale';
+import ElInput from 'jade-ui/packages/input';
+import Popper from 'jade-ui/src/utils/vue-popper';
+import Clickoutside from 'jade-ui/src/utils/clickoutside';
+import emitter from 'jade-ui/src/mixins/emitter';
+import Locale from 'jade-ui/src/mixins/locale';
+import { t } from 'jade-ui/src/locale';
 import debounce from 'throttle-debounce/debounce';
-import { generateId, escapeRegexpString, isIE, isEdge } from 'element-ui/src/utils/util';
+import { generateId, escapeRegexpString, isIE, isEdge } from 'jade-ui/src/utils/util';
 
 const popperMixin = {
   props: {
@@ -217,7 +217,7 @@ export default {
       return (this.elFormItem || {}).elFormItemSize;
     },
     cascaderSize() {
-      return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+      return this.size || this._elFormItemSize || (this.$jade || {}).size;
     },
     cascaderDisabled() {
       return this.disabled || (this.elForm || {}).disabled;

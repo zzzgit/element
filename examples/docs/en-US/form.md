@@ -129,7 +129,7 @@ When the vertical space is limited and the form is relatively simple, you can pu
 
 ### Alignment
 
-Depending on your design, there are several different ways to align your label element.
+Depending on your design, there are several different ways to align your label jade.
 
 :::demo The `label-position` attribute decides how labels align, it can be `top` or `left`. When set to `top`, labels will be placed at the top of the form field.
 

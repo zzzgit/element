@@ -4,7 +4,7 @@
     "pages": {
       "index": {
         "1": "网站快速成型工具",
-        "2": "Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库",
+        "2": "jade，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库",
         "3": "指南",
         "4": "了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。",
         "5": "查看详情",
@@ -79,12 +79,12 @@
         "1": "资源",
         "2": "整理中",
         "3": "Axure Components",
-        "4": "通过在 Axure 中导入 Element 组件库，可以在交互设计阶段方便地调用常用的组件",
+        "4": "通过在 Axure 中导入 jade 组件库，可以在交互设计阶段方便地调用常用的组件",
         "5": "下载",
         "6": "Sketch Template",
-        "7": "从 Element Template 快速调用常用组件，在提升设计效率的同时，保证统一的视觉风格",
+        "7": "从 jade Template 快速调用常用组件，在提升设计效率的同时，保证统一的视觉风格",
         "8": "组件交互文档",
-        "9": "进一步查看 Element 交互文档，从一个较为微观的角度详细地了解各个组件的交互细节",
+        "9": "进一步查看 jade 交互文档，从一个较为微观的角度详细地了解各个组件的交互细节",
         "paraHeight": "1.8",
         "placeholder1": "整理中",
         "placeholder2": "设计资源正在整理和完善中"
@@ -96,7 +96,7 @@
     "pages": {
       "index": {
         "1": "A Desktop UI Library",
-        "2": "Element, a Vue 2.0 based component library for developers, designers and product managers",
+        "2": "jade, a Vue 2.0 based component library for developers, designers and product managers",
         "3": "Guide",
         "4": "Understand the design guidelines, helping designers build product that's logically sound, reasonably structured and easy to use.",
         "5": "View Detail",
@@ -171,10 +171,10 @@
         "1": "Resource",
         "2": "Under construction.",
         "3": "Axure Components",
-        "4": "By importing Element UI in Axure, you can easily apply all the components we provide during interaction design.",
+        "4": "By importing jade UI in Axure, you can easily apply all the components we provide during interaction design.",
         "5": "Download",
         "6": "Sketch Template",
-        "7": "Apply components from Element template, so you can improve design efficiency while keeping a unified visual style.",
+        "7": "Apply components from jade template, so you can improve design efficiency while keeping a unified visual style.",
         "8": "Interaction Design Documentation",
         "9": "Take a closer look at the interaction design documentation. Learn more details of each component from a microcosmic perspective.",
         "paraHeight": "1.6",
@@ -188,7 +188,7 @@
     "pages": {
       "index": {
         "1": "Un kit de interfaz de usuario para la web",
-        "2": "Element, una librería de componentes basada en Vue 2.0 para desarrolladores, diseñadores y jefes de producto",
+        "2": "jade, una librería de componentes basada en Vue 2.0 para desarrolladores, diseñadores y jefes de producto",
         "3": "Guía",
         "4": "Entender los líneamientos de diseño, ayudando a diseñadores a crear productos que sean lógicos, razonablemente estructurados y fáciles de usar.",
         "5": "Ver detalle",
@@ -266,7 +266,7 @@
         "4": "Mediante la importación de elementos de interfaz de usuario en Axure, se puede aplicar fácilmente a todos los componentes que proporcionamos durante el diseño de interacción.",
         "5": "Descarga",
         "6": "Plantilla de Sketch",
-        "7": "Aplica componentes de la plantilla Element para que pueda mejorarla eficiencia del diseño manteniendo un estilo visual unificado.",
+        "7": "Aplica componentes de la plantilla jade para que pueda mejorarla eficiencia del diseño manteniendo un estilo visual unificado.",
         "8": "Documentación de diseño de interacción",
         "9": "Eche un vistazo más de cerca a la documentación de diseño de interacción. Conoce más detalles de cada componente desde una perspectiva microcósmica.",
         "paraHeight": "1.6",
@@ -280,7 +280,7 @@
     "pages": {
       "index": {
         "1": "Un kit de composants d'interface pour le web",
-        "2": "Element, une bibliothèque de composants web basée sur Vue 2.0 pour les développeurs, designers et chef de produits.",
+        "2": "jade, une bibliothèque de composants web basée sur Vue 2.0 pour les développeurs, designers et chef de produits.",
         "3": "Guide",
         "4": "Comprendre le design, aider les designers à concevoir un produit adapté, structuré et facile d'utilisation.",
         "5": "Détails",
@@ -356,10 +356,10 @@
         "1": "Resources",
         "2": "En construction.",
         "3": "Composants Axure",
-        "4": "En important ELement UI dans Axure, vous pourrez facilement utiliser les composants durant le design des interactions",
+        "4": "En important jade UI dans Axure, vous pourrez facilement utiliser les composants durant le design des interactions",
         "5": "Téléchargement",
         "6": "Modèle de croquis",
-        "7": "Applique des composants d'un template Element, afin d'améliorer l'efficacité du design tout en gardant un style visuel unifié.",
+        "7": "Applique des composants d'un template jade, afin d'améliorer l'efficacité du design tout en gardant un style visuel unifié.",
         "8": "Documentation du design des interactions",
         "9": "Jetez un oeil à la documentation du design des interactions. Obtenez des détails sur chaque composant.",
         "paraHeight": "1.6",

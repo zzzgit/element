@@ -6,7 +6,7 @@ Utilizado para mostrar retroalimentacion despues de una actividad. La diferencia
 
 Se muestra en la parte superior de la pagina y desaparece despues de 3 segundos.
 
-:::demo La configuracion del componente Message es muy similar al del componente notification, asi que parte de las opciones no seran explicadas en detalle aqui. Puedes consultar la tabla de opciones en la parte inferior conbinada con la documentacion del componente notification para comprenderla. Element a registrado un metodo `$message` para poder invocarlo. Message puede tomar una cadena o un Vnode como parametro, y lo mostrara como el cuerpo principal.
+:::demo La configuracion del componente Message es muy similar al del componente notification, asi que parte de las opciones no seran explicadas en detalle aqui. Puedes consultar la tabla de opciones en la parte inferior conbinada con la documentacion del componente notification para comprenderla. jade a registrado un metodo `$message` para poder invocarlo. Message puede tomar una cadena o un Vnode como parametro, y lo mostrara como el cuerpo principal.
 
 ```html
 <template>
@@ -186,14 +186,14 @@ Aunque la propiedad `message` soporta cadenas HTML, realizar arbitrariamente ren
 
 ### Metodos Globales
 
-Element ha agregado un método global llamado `$message` para Vue.prototype. Entonces en una instancia de vue puede llamar a `Message` como lo hicimos en esta pagina.
+jade ha agregado un método global llamado `$message` para Vue.prototype. Entonces en una instancia de vue puede llamar a `Message` como lo hicimos en esta pagina.
 
 ### Importación local
 
 Import `Message`:
 
 ```javascript
-import { Message } from 'element-ui';
+import { Message } from 'jade-ui';
 ```
 
 En este caso deberia llamar al metodo `Message(options)`. Tambien se han registrado metodos para los diferentes tipos, e.g. `Message.success(options)`. Puede llamar al metodo `Message.closeAll()` para cerrar manualmente todas las instancias.

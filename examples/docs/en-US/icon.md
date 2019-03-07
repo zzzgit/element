@@ -1,6 +1,6 @@
 ## Icon
 
-Element provides a set of common icons.
+jade provides a set of common icons.
 
 ### Basic usage
 

@@ -1,7 +1,7 @@
-import ElCheckbox from 'element-ui/packages/checkbox';
-import ElTag from 'element-ui/packages/tag';
-import objectAssign from 'element-ui/src/utils/merge';
-import { getPropByPath } from 'element-ui/src/utils/util';
+import ElCheckbox from 'jade-ui/packages/checkbox';
+import ElTag from 'jade-ui/packages/tag';
+import objectAssign from 'jade-ui/src/utils/merge';
+import { getPropByPath } from 'jade-ui/src/utils/util';
 
 let columnIdSeed = 1;
 
@@ -285,7 +285,7 @@ export default {
       if (value !== undefined) {
         if (prop === 'renderHeader') {
           if (type === 'selection' && column[prop]) {
-            console.warn('[Element Warn][TableColumn]Selection column doesn\'t allow to set render-header function.');
+            console.warn('[jade Warn][TableColumn]Selection column doesn\'t allow to set render-header function.');
           } else {
             value = column[prop] || value;
           }
@@ -296,7 +296,7 @@ export default {
 
     // Deprecation warning for renderHeader property
     if (this.renderHeader) {
-      console.warn('[Element Warn][TableColumn]Comparing to render-header, scoped-slot header is easier to use. We recommend users to use scoped-slot header.');
+      console.warn('[jade Warn][TableColumn]Comparing to render-header, scoped-slot header is easier to use. We recommend users to use scoped-slot header.');
     }
 
     this.columnConfig = column;
@@ -451,7 +451,7 @@ export default {
 
     if (this.$scopedSlots.header) {
       if (this.type === 'selection') {
-        console.warn('[Element Warn][TableColumn]Selection column doesn\'t allow to set scoped-slot header.');
+        console.warn('[jade Warn][TableColumn]Selection column doesn\'t allow to set scoped-slot header.');
       } else {
         this.columnConfig.renderHeader = (h, scope) => this.$scopedSlots.header(scope);
       }

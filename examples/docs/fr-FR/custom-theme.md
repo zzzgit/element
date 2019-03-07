@@ -1,31 +1,31 @@
 ## Thème
-Element utlise le style BEM pour le CSS afin que vous puissiez écraser les règles prédéfinies facilement. Mais si vous avez besoin de remplacer des styles à une plus grande échelle , e.g. changer le thème de bleu à orange ou vert, les modifier une par une serait fastidieux. Nous fournissons trois méthodes pour changer les variables de style.
+jade utlise le style BEM pour le CSS afin que vous puissiez écraser les règles prédéfinies facilement. Mais si vous avez besoin de remplacer des styles à une plus grande échelle , e.g. changer le thème de bleu à orange ou vert, les modifier une par une serait fastidieux. Nous fournissons trois méthodes pour changer les variables de style.
 
 ### Changer la couleur du thème
-Si vous avez juste besoin de changer la couleur du thème, le [générateur de thème en ligne](https://elementui.github.io/theme-chalk-preview/#/en-US) est recommandé. La couleur du thème d'Element est un bleau clair et agréable. En le changeant, vous rendez Element visuellement plus adapté à vos projets.
+Si vous avez juste besoin de changer la couleur du thème, le [générateur de thème en ligne](https://elementui.github.io/theme-chalk-preview/#/en-US) est recommandé. La couleur du thème d'jade est un bleau clair et agréable. En le changeant, vous rendez jade visuellement plus adapté à vos projets.
 
 Le site précédent vous permet de visualiser et de télécharger un nouveau thème immédiatement (pour un importer un nouveau thème, référez-vous à la partie 'Importer un thème personnalisé' or 'Importer un thème de composant à la demande' de cette section).
 
 ### Mettre à jour les variables SCSS de votre projet
-`theme-chalk` est écrit en SCSS. Si votre projet utilises SCSS, vous pouvez changer directement les variables d'Élément. Créez un nouveau fichier, e.g. `element-variables.scss`:
+`theme-chalk` est écrit en SCSS. Si votre projet utilises SCSS, vous pouvez changer directement les variables d'Élément. Créez un nouveau fichier, e.g. `jade-variables.scss`:
 
 ```html
 /* couleur du thème */
 $--color-primary: teal;
 
 /* chemin vers le fichier de police, requis */
-$--font-path: '~element-ui/lib/theme-chalk/fonts';
+$--font-path: '~jade-ui/lib/theme-chalk/fonts';
 
-@import "~element-ui/packages/theme-chalk/src/index";
+@import "~jade-ui/packages/theme-chalk/src/index";
 ```
 
-Puis dans le fichier d'entrée, importez ce style au lieu de celui d'Element:
+Puis dans le fichier d'entrée, importez ce style au lieu de celui d'jade:
 ```JS
 import Vue from 'vue'
-import Element from 'element-ui'
-import './element-variables.scss'
+import jade from 'jade-ui'
+import './jade-variables.scss'
 
-Vue.use(Element)
+Vue.use(jade)
 ```
 
 :::tip
@@ -38,20 +38,20 @@ Si votre projet n'utilise pas SCSS, vous pouvez personnaliser le thème en utili
 #### <strong>Installation</strong>
 Installez le générateur de thème de manière globale ou locale. Une installation locale est recommandé afin que les personnes clonant votre dépôt bénéficient d'une installation automatique via npm.
 ```shell
-npm i element-theme -g
+npm i jade-theme -g
 ```
 
 Installer ensuite le thème chalk depuis npm ou GitHub.
 ```shell
 # Via npm
-npm i element-theme-chalk -D
+npm i jade-theme-chalk -D
 
 # Via GitHub
 npm i https://github.com/ElementUI/theme-chalk -D
 ```
 
 #### <strong>Initialisation d'un fichier de variable</strong>
-Après l'installation des paquets ci-dessus, une commande appellée `et` devient disponible dans le CLI (si les paquets sont installés localement, utilisez `node_modules/.bin/et` à la place). Utilisez `-i` pour intialiser le fichier de variables, `element-variables.scss` par défaut. Vous pouvez spécifier n'importe quel dossier comme sortie.
+Après l'installation des paquets ci-dessus, une commande appellée `et` devient disponible dans le CLI (si les paquets sont installés localement, utilisez `node_modules/.bin/et` à la place). Utilisez `-i` pour intialiser le fichier de variables, `jade-variables.scss` par défaut. Vous pouvez spécifier n'importe quel dossier comme sortie.
 
 ```shell
 et -i [nom du fichier]
@@ -59,7 +59,7 @@ et -i [nom du fichier]
 > ✔ Generator variables file
 ```
 
-Dans `element-variables.scss` vous trouverez toutes les variables utilisées pour le style d'Element, définies en SCSS. Voici un snippet:
+Dans `jade-variables.scss` vous trouverez toutes les variables utilisées pour le style d'jade, définies en SCSS. Voici un snippet:
 
 ```css
 $--color-primary: #409EFF !default;
@@ -82,7 +82,7 @@ $--color-info: #909399 !default;
 ```
 
 #### <strong>Modifier les variables</strong>
-Éditer `element-variables.scss`, e.g. en changeant la couleur du thème pour du rouge:
+Éditer `jade-variables.scss`, e.g. en changeant la couleur du thème pour du rouge:
 ```CSS
 $--color-primary: red;
 ```
@@ -93,7 +93,7 @@ Après avoir sauvegarder le fichier de variables, utilisez `et` pour générer l
 et
 
 > ✔ build theme font
-> ✔ build element theme
+> ✔ build jade theme
 ```
 
 #### <strong>Importer le thème</strong>
@@ -101,7 +101,7 @@ Par défaut le thème généré est placé dans `./theme`. Vous pouvez spécifie
 
 ```javascript
 import '../theme/index.css'
-import ElementUI from 'element-ui'
+import ElementUI from 'jade-ui'
 import Vue from 'vue'
 
 Vue.use(ElementUI)
@@ -115,7 +115,7 @@ Si vous utilisez `babel-plugin-component` pour les imports sur demande, modifiez
     [
       "component",
       {
-        "libraryName": "element-ui",
+        "libraryName": "jade-ui",
         "styleLibraryName": "~theme"
       }
     ]
@@ -123,4 +123,4 @@ Si vous utilisez `babel-plugin-component` pour les imports sur demande, modifiez
 }
 ```
 
-Si vous n'êtes pas familier avec `babel-plugin-component`, référez-vous à la page <a href="./#/fr-FR/component/quickstart">Guide</a>. Pour plus d'informations, jetez un oeil au [dépôt du projet](https://github.com/ElementUI/element-theme) de `element-theme`.
+Si vous n'êtes pas familier avec `babel-plugin-component`, référez-vous à la page <a href="./#/fr-FR/component/quickstart">Guide</a>. Pour plus d'informations, jetez un oeil au [dépôt du projet](https://github.com/ElementUI/jade-theme) de `jade-theme`.

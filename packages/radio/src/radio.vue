@@ -42,7 +42,7 @@
   </label>
 </template>
 <script>
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Emitter from 'jade-ui/src/mixins/emitter';
 
   export default {
     name: 'ElRadio',
@@ -104,7 +104,7 @@
         return (this.elFormItem || {}).elFormItemSize;
       },
       radioSize() {
-        const temRadioSize = this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        const temRadioSize = this.size || this._elFormItemSize || (this.$jade || {}).size;
         return this.isGroup
           ? this._radioGroup.radioGroupSize || temRadioSize
           : temRadioSize;

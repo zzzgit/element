@@ -90,11 +90,11 @@
 </script>
 
 ## Couleur
-Element utilise un ensemble de palettes spécifiques afin de fournir un style consistant pour vos produits.
+jade utilise un ensemble de palettes spécifiques afin de fournir un style consistant pour vos produits.
 
 ### Couleur principale
 
-La couleur principale d'Element est un bleu clair et agréable.
+La couleur principale d'jade est un bleu clair et agréable.
 
 <el-row :gutter="12">
   <el-col :span="10" :xs="{span: 12}">

@@ -285,8 +285,8 @@ Además del tamaño predeterminado, el componente Dropdown proporciona tres tama
 
 | Nombre | Descripción |
 |------|--------|
-| — | content of Dropdown. Notice: Must be a valid html dom element (ex. `<span>, <button> etc.`) or `el-component`, to attach the trigger listener  |
-| dropdown | content of the Dropdown Menu, usually a `<el-dropdown-menu>` element |
+| — | content of Dropdown. Notice: Must be a valid html dom jade (ex. `<span>, <button> etc.`) or `el-component`, to attach the trigger listener  |
+| dropdown | content of the Dropdown Menu, usually a `<el-dropdown-menu>` jade |
 
 ### Dropdown Eventos
 | Nombre         | Descripción                              | Parametros                               |

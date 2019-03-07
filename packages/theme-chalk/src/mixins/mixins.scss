@@ -75,12 +75,12 @@
   }
 }
 
-@mixin e($element) {
-  $E: $element !global;
+@mixin e($jade) {
+  $E: $jade !global;
   $selector: &;
   $currentSelector: "";
-  @each $unit in $element {
-    $currentSelector: #{$currentSelector + "." + $B + $element-separator + $unit + ","};
+  @each $unit in $jade {
+    $currentSelector: #{$currentSelector + "." + $B + $jade-separator + $unit + ","};
   }
 
   @if hitAllSpecialNestRule($selector) {
@@ -119,7 +119,7 @@
   $interpolation: '';
 
   @if $E-flag {
-    $interpolation: $element-separator + $E-flag;
+    $interpolation: $jade-separator + $E-flag;
   }
 
   @at-root {
@@ -131,7 +131,7 @@
   }
 }
 
-@mixin spec-selector($specSelector: '', $element: $E, $modifier: false, $block: $B) {
+@mixin spec-selector($specSelector: '', $jade: $E, $modifier: false, $block: $B) {
   $modifierCombo: '';
 
   @if $modifier {
@@ -139,13 +139,13 @@
   }
 
   @at-root {
-    #{&}#{$specSelector}.#{$block+$element-separator+$element+$modifierCombo} {
+    #{&}#{$specSelector}.#{$block+$jade-separator+$jade+$modifierCombo} {
       @content
     }
   }
 }
 
-@mixin meb($modifier: false, $element: $E, $block: $B) {
+@mixin meb($modifier: false, $jade: $E, $block: $B) {
   $selector: &;
   $modifierCombo: '';
 
@@ -155,7 +155,7 @@
 
   @at-root {
     #{$selector} {
-      .#{$block+$element-separator+$element+$modifierCombo} {
+      .#{$block+$jade-separator+$jade+$modifierCombo} {
         @content
       }
     }

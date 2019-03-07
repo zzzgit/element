@@ -1,8 +1,8 @@
 <script>
 import UploadList from './upload-list';
 import Upload from './upload';
-import ElProgress from 'element-ui/packages/progress';
-import Migrating from 'element-ui/src/mixins/migrating';
+import ElProgress from 'jade-ui/packages/progress';
+import Migrating from 'jade-ui/src/mixins/migrating';
 
 function noop() {}
 
@@ -129,7 +129,7 @@ export default {
             try {
               file.url = URL.createObjectURL(file.raw);
             } catch (err) {
-              console.error('[Element Error][Upload]', err);
+              console.error('[jade Error][Upload]', err);
             }
           }
           return file;
@@ -164,7 +164,7 @@ export default {
         try {
           file.url = URL.createObjectURL(rawFile);
         } catch (err) {
-          console.error('[Element Error][Upload]', err);
+          console.error('[jade Error][Upload]', err);
           return;
         }
       }
@@ -251,7 +251,7 @@ export default {
         props: {
           'default-file-list': 'default-file-list is renamed to file-list.',
           'show-upload-list': 'show-upload-list is renamed to show-file-list.',
-          'thumbnail-mode': 'thumbnail-mode has been deprecated, you can implement the same effect according to this case: http://element.eleme.io/#/zh-CN/component/upload#yong-hu-tou-xiang-shang-chuan'
+          'thumbnail-mode': 'thumbnail-mode has been deprecated, you can implement the same effect according to this case: http://jade.eleme.io/#/zh-CN/component/upload#yong-hu-tou-xiang-shang-chuan'
         }
       };
     }

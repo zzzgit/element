@@ -36,9 +36,9 @@
 </template>
 <script>
   import AsyncValidator from 'async-validator';
-  import emitter from 'element-ui/src/mixins/emitter';
-  import objectAssign from 'element-ui/src/utils/merge';
-  import { noop, getPropByPath } from 'element-ui/src/utils/util';
+  import emitter from 'jade-ui/src/mixins/emitter';
+  import objectAssign from 'jade-ui/src/utils/merge';
+  import { noop, getPropByPath } from 'jade-ui/src/utils/util';
 
   export default {
     name: 'ElFormItem',
@@ -158,7 +158,7 @@
         return this.size || this._formSize;
       },
       sizeClass() {
-        return this.elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.elFormItemSize || (this.$jade || {}).size;
       }
     },
     data() {

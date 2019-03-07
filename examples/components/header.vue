@@ -274,11 +274,11 @@
           <slot>
             <img
               src="../assets/images/element-logo.svg"
-              alt="element-logo"
+              alt="jade-logo"
               class="nav-logo">
             <img
               src="../assets/images/element-logo-small.svg"
-              alt="element-logo"
+              alt="jade-logo"
               class="nav-logo-small">
           </slot>
 
@@ -377,10 +377,10 @@
   import ThemeConfigurator from './theme-configurator';
   import AlgoliaSearch from './search.vue';
   import compoLang from '../i18n/component.json';
-  import Element from 'main/index.js';
+  import jade from 'main/index.js';
   import bus from '../bus';
 
-  const { version } = Element;
+  const { version } = jade;
 
   export default {
     data() {

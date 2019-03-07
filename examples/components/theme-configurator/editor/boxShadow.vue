@@ -94,7 +94,7 @@
 .config-content {
   padding: 5px 0;
 }
-/* Element buton style override */
+/* jade buton style override */
 .el-button--mini.is-round {
   padding: 3px 3px;  
 }

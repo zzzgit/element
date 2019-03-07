@@ -1,8 +1,8 @@
 {
-  "name": "element-ui",
+  "name": "jade-ui",
   "version": "2.6.1",
   "description": "A Component Library for Vue.js.",
-  "main": "lib/element-ui.common.js",
+  "main": "lib/jade-ui.common.js",
   "files": [
     "lib",
     "src",
@@ -17,7 +17,7 @@
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "build:umd": "node build/bin/build-locale.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
-    "deploy:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js && echo element.eleme.io>>examples/element-ui/CNAME",
+    "deploy:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js && echo jade.eleme.io>>examples/jade-ui/CNAME",
     "dev": "npm run bootstrap && npm run build:file && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js & node build/bin/template.js",
     "dev:play": "npm run build:file && cross-env NODE_ENV=development PLAY_ENV=true webpack-dev-server --config build/webpack.demo.js",
     "dist": "npm run clean && npm run build:file && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:utils && npm run build:umd && npm run build:theme",
@@ -29,12 +29,12 @@
   },
   "faas": [
     {
-      "domain": "element",
-      "public": "temp_web/element"
+      "domain": "jade",
+      "public": "temp_web/jade"
     },
     {
-      "domain": "element-theme",
-      "public": "examples/element-ui",
+      "domain": "jade-theme",
+      "public": "examples/jade-ui",
       "build": [
         "yarn",
         "npm run deploy:build"
@@ -43,9 +43,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "git@github.com:ElemeFE/jade.git"
   },
-  "homepage": "http://element.eleme.io",
+  "homepage": "http://jade.eleme.io",
   "keywords": [
     "eleme",
     "vue",
@@ -53,7 +53,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ElemeFE/element/issues"
+    "url": "https://github.com/ElemeFE/jade/issues"
   },
   "unpkg": "lib/index.js",
   "style": "lib/theme-chalk/index.css",

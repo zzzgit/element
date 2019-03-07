@@ -1,7 +1,7 @@
 {
-  "name": "element-theme-chalk",
+  "name": "jade-theme-chalk",
   "version": "2.6.1",
-  "description": "Element component chalk theme.",
+  "description": "jade component chalk theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
   "files": [
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/ElementUI/theme-chalk.git"
   },
   "keywords": [
-    "element",
+    "jade",
     "theme"
   ],
   "author": "yi.shyang@ele.me",

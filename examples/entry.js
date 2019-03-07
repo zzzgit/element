@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import entry from './app';
 import VueRouter from 'vue-router';
-import Element from 'main/index.js';
+import jade from 'main/index.js';
 import hljs from 'highlight.js';
 import routes from './route.config';
 import demoBlock from './components/demo-block';
@@ -16,7 +16,7 @@ import './demo-styles/index.scss';
 import './assets/styles/common.css';
 import './assets/styles/fonts/style.css';
 
-Vue.use(Element);
+Vue.use(jade);
 Vue.use(VueRouter);
 Vue.component('demo-block', demoBlock);
 Vue.component('main-footer', MainFooter);
@@ -43,7 +43,7 @@ router.afterEach(route => {
       return;
     }
   }
-  document.title = 'Element';
+  document.title = 'jade';
 });
 
 new Vue({ // eslint-disable-line
