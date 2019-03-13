@@ -33,8 +33,8 @@
 
 <script>
   import { getFirstDayOfMonth, getDayCountOfMonth, getWeekNumber, getStartDateOfMonth, prevDate, nextDate, isDate, clearTime as _clearTime} from '../util';
-  import Locale from 'element-ui/src/mixins/locale';
-  import { arrayFindIndex, arrayFind, coerceTruthyValueToArray } from 'element-ui/src/utils/util';
+  import Locale from 'jade-ui/src/mixins/locale';
+  import { arrayFindIndex, arrayFind, coerceTruthyValueToArray } from 'jade-ui/src/utils/util';
 
   const WEEKS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const getDateTimestamp = function(time) {
@@ -47,7 +47,7 @@
     }
   };
 
-  // remove the first element that satisfies `pred` from arr
+  // remove the first jade that satisfies `pred` from arr
   // return a new array if modification occurs
   // return the original array otherwise
   const removeFromArray = function(arr, pred) {

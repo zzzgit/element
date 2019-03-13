@@ -57,7 +57,7 @@ Show animation while loading data.
 
 Displays animation in a container (such as a table) while loading data.
 
-:::demo Element provides two ways to invoke Loading: directive and service. For the custom directive `v-loading`, you just need to bind a `boolean` value to it. By default, the loading mask will append to the element where the directive is used. Adding the `body` modifier makes the mask append to the body element.
+:::demo jade provides two ways to invoke Loading: directive and service. For the custom directive `v-loading`, you just need to bind a `boolean` value to it. By default, the loading mask will append to the jade where the directive is used. Adding the `body` modifier makes the mask append to the body jade.
 
 ```html
 <template>
@@ -117,14 +117,14 @@ Displays animation in a container (such as a table) while loading data.
 
 You can customize loading text, loading spinner and background color.
 
-:::demo Add attribute `element-loading-text` to the element on which `v-loading` is bound, and its value will be displayed under the spinner. Similarly, `element-loading-spinner` and `element-loading-background` are for customizing loading spinner class name and background color.
+:::demo Add attribute `jade-loading-text` to the jade on which `v-loading` is bound, and its value will be displayed under the spinner. Similarly, `jade-loading-spinner` and `jade-loading-background` are for customizing loading spinner class name and background color.
 ```html
 <template>
   <el-table
     v-loading="loading2"
-    element-loading-text="Loading..."
-    element-loading-spinner="el-icon-loading"
-    element-loading-background="rgba(0, 0, 0, 0.8)"
+    jade-loading-text="Loading..."
+    jade-loading-spinner="el-icon-loading"
+    jade-loading-background="rgba(0, 0, 0, 0.8)"
     :data="tableData"
     style="width: 100%">
     <el-table-column
@@ -224,7 +224,7 @@ Show a full screen animation while loading data.
 ### Service
 You can also invoke Loading with a service. Import Loading service:
 ```javascript
-import { Loading } from 'element-ui';
+import { Loading } from 'jade-ui';
 ```
 Invoke it:
 ```javascript
@@ -245,7 +245,7 @@ console.log(loadingInstance1 === loadingInstance2); // true
 ```
 Calling the `close` method on any one of them can close this full screen Loading.
 
-If Element is imported entirely, a globally method `$loading` will be registered to Vue.prototype. You can invoke it like this: `this.$loading(options)`, and it also returns a Loading instance.
+If jade is imported entirely, a globally method `$loading` will be registered to Vue.prototype. You can invoke it like this: `this.$loading(options)`, and it also returns a Loading instance.
 
 ### Options
 | Attribute      | Description          | Type      | Accepted Values       | Default  |

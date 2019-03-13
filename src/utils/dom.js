@@ -21,15 +21,15 @@ const camelCase = function(name) {
 /* istanbul ignore next */
 export const on = (function() {
   if (!isServer && document.addEventListener) {
-    return function(element, event, handler) {
-      if (element && event && handler) {
-        element.addEventListener(event, handler, false);
+    return function(jade, event, handler) {
+      if (jade && event && handler) {
+        jade.addEventListener(event, handler, false);
       }
     };
   } else {
-    return function(element, event, handler) {
-      if (element && event && handler) {
-        element.attachEvent('on' + event, handler);
+    return function(jade, event, handler) {
+      if (jade && event && handler) {
+        jade.attachEvent('on' + event, handler);
       }
     };
   }
@@ -38,15 +38,15 @@ export const on = (function() {
 /* istanbul ignore next */
 export const off = (function() {
   if (!isServer && document.removeEventListener) {
-    return function(element, event, handler) {
-      if (element && event) {
-        element.removeEventListener(event, handler, false);
+    return function(jade, event, handler) {
+      if (jade && event) {
+        jade.removeEventListener(event, handler, false);
       }
     };
   } else {
-    return function(element, event, handler) {
-      if (element && event) {
-        element.detachEvent('on' + event, handler);
+    return function(jade, event, handler) {
+      if (jade && event) {
+        jade.detachEvent('on' + event, handler);
       }
     };
   }
@@ -117,9 +117,9 @@ export function removeClass(el, cls) {
 };
 
 /* istanbul ignore next */
-export const getStyle = ieVersion < 9 ? function(element, styleName) {
+export const getStyle = ieVersion < 9 ? function(jade, styleName) {
   if (isServer) return;
-  if (!element || !styleName) return null;
+  if (!jade || !styleName) return null;
   styleName = camelCase(styleName);
   if (styleName === 'float') {
     styleName = 'styleFloat';
@@ -128,47 +128,47 @@ export const getStyle = ieVersion < 9 ? function(element, styleName) {
     switch (styleName) {
       case 'opacity':
         try {
-          return element.filters.item('alpha').opacity / 100;
+          return jade.filters.item('alpha').opacity / 100;
         } catch (e) {
           return 1.0;
         }
       default:
-        return (element.style[styleName] || element.currentStyle ? element.currentStyle[styleName] : null);
+        return (jade.style[styleName] || jade.currentStyle ? jade.currentStyle[styleName] : null);
     }
   } catch (e) {
-    return element.style[styleName];
+    return jade.style[styleName];
   }
-} : function(element, styleName) {
+} : function(jade, styleName) {
   if (isServer) return;
-  if (!element || !styleName) return null;
+  if (!jade || !styleName) return null;
   styleName = camelCase(styleName);
   if (styleName === 'float') {
     styleName = 'cssFloat';
   }
   try {
-    var computed = document.defaultView.getComputedStyle(element, '');
-    return element.style[styleName] || computed ? computed[styleName] : null;
+    var computed = document.defaultView.getComputedStyle(jade, '');
+    return jade.style[styleName] || computed ? computed[styleName] : null;
   } catch (e) {
-    return element.style[styleName];
+    return jade.style[styleName];
   }
 };
 
 /* istanbul ignore next */
-export function setStyle(element, styleName, value) {
-  if (!element || !styleName) return;
+export function setStyle(jade, styleName, value) {
+  if (!jade || !styleName) return;
 
   if (typeof styleName === 'object') {
     for (var prop in styleName) {
       if (styleName.hasOwnProperty(prop)) {
-        setStyle(element, prop, styleName[prop]);
+        setStyle(jade, prop, styleName[prop]);
       }
     }
   } else {
     styleName = camelCase(styleName);
     if (styleName === 'opacity' && ieVersion < 9) {
-      element.style.filter = isNaN(value) ? '' : 'alpha(opacity=' + value * 100 + ')';
+      jade.style.filter = isNaN(value) ? '' : 'alpha(opacity=' + value * 100 + ')';
     } else {
-      element.style[styleName] = value;
+      jade.style[styleName] = value;
     }
   }
 };

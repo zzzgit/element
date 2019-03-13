@@ -22,7 +22,7 @@
     },
     computed: {
       tagSize() {
-        return this.size || (this.$ELEMENT || {}).size;
+        return this.size || (this.$jade || {}).size;
       }
     },
     render(h) {

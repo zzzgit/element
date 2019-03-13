@@ -101,7 +101,7 @@
 
 Similar to Tooltip, Popover is also built with `Vue-popper`. So for some duplicated attributes, please refer to the documentation of Tooltip.
 
-:::demo The `trigger` attribute is used to define how popover is triggered: `hover`, `click`, `focus` or `manual`. As for the triggering element, you can write it in two different ways: use the `slot="reference"` named slot, or use the `v-popover` directive and set it to Popover's `ref`.
+:::demo The `trigger` attribute is used to define how popover is triggered: `hover`, `click`, `focus` or `manual`. As for the triggering jade, you can write it in two different ways: use the `slot="reference"` named slot, or use the `v-popover` directive and set it to Popover's `ref`.
 
 ```html
 <template>
@@ -245,7 +245,7 @@ Of course, you can nest other operations. It's more light-weight than using a di
 |  value / v-model        |  whether popover is visible  | Boolean           | — |  false |
 |  offset        |  popover offset  | number           | — |  0 |
 |  transition     |  popover transition animation      | string             | — | el-fade-in-linear |
-|  visible-arrow   |  whether a tooltip arrow is displayed or not. For more info, please refer to [Vue-popper](https://github.com/element-component/vue-popper) | boolean | — | true |
+|  visible-arrow   |  whether a tooltip arrow is displayed or not. For more info, please refer to [Vue-popper](https://github.com/jade-component/vue-popper) | boolean | — | true |
 |  popper-options        | parameters for [popper.js](https://popper.js.org/documentation.html) | object            | please refer to [popper.js](https://popper.js.org/documentation.html) | `{ boundariesElement: 'body', gpuAcceleration: false }` |
 |  popper-class        |  custom class name for popover | string | — | — |
 |  open-delay        | delay of appearance when `trigger` is hover, in milliseconds | number | — | — |
@@ -254,7 +254,7 @@ Of course, you can nest other operations. It's more light-weight than using a di
 | Name | Description |
 | --- | --- |
 | — | text content of popover |
-| reference | HTML element that triggers popover |
+| reference | HTML jade that triggers popover |
 
 ### Events
 | Event Name | Description | 回调参数 |

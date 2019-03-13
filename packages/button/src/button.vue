@@ -62,7 +62,7 @@
         return (this.elFormItem || {}).elFormItemSize;
       },
       buttonSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.size || this._elFormItemSize || (this.$jade || {}).size;
       },
       buttonDisabled() {
         return this.disabled || (this.elForm || {}).disabled;

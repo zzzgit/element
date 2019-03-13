@@ -31,7 +31,7 @@
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -329,7 +329,7 @@ export default {
 
 ### Mixed input
 
-Prepend or append an element, generally a label or a button.
+Prepend or append an jade, generally a label or a button.
 
 :::demo Use `slot` to distribute elements that prepend or append to Input.
 
@@ -472,7 +472,7 @@ You can get some recommended tips based on the current input.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -556,7 +556,7 @@ Customize how suggestions are displayed.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -604,7 +604,7 @@ Search data from server-side.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -642,7 +642,7 @@ Search data from server-side.
 
 | Attribute      | Description          | Type      | Accepted Values       | Default  |
 | ----| ----| ----| ---- | ----- |
-|type| type of input | string | text, textarea and other [native input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types) | text |
+|type| type of input | string | text, textarea and other [native input types](https://developer.mozilla.org/en-US/docs/Web/HTML/jade/input#Form_%3Cinput%3E_types) | text |
 |value / v-model| binding value | string / number| — | — |
 |maxlength| same as `maxlength` in native input | number| — | — |
 |minlength| same as `minlength` in native input | number | — | — |
@@ -690,9 +690,9 @@ Search data from server-side.
 
 | Method | Description | Parameters |
 |------|--------|-------|
-| focus | focus the input element | — |
-| blur | blur the input element | — |
-| select | select the text in input element | — |
+| focus | focus the input jade | — |
+| blur | blur the input jade | — |
+| select | select the text in input jade | — |
 
 ### Autocomplete Attributes
 
@@ -741,4 +741,4 @@ Attribute | Description | Type | Options | Default
 
 | Method | Description | Parameters |
 |------|--------|-------|
-| focus | focus the input element | — |
+| focus | focus the input jade | — |

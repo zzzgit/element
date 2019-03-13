@@ -1,9 +1,9 @@
 import Pager from './pager.vue';
-import ElSelect from 'element-ui/packages/select';
-import ElOption from 'element-ui/packages/option';
-import ElInput from 'element-ui/packages/input';
-import Locale from 'element-ui/src/mixins/locale';
-import { valueEquals } from 'element-ui/src/utils/util';
+import ElSelect from 'jade-ui/packages/select';
+import ElOption from 'jade-ui/packages/option';
+import ElInput from 'jade-ui/packages/input';
+import Locale from 'jade-ui/src/mixins/locale';
+import { valueEquals } from 'jade-ui/src/utils/util';
 
 export default {
   name: 'ElPagination',
@@ -232,7 +232,7 @@ export default {
       methods: {
         handleKeyup({ keyCode, target }) {
           // Chrome, Safari, Firefox triggers change event on Enter
-          // Hack for IE: https://github.com/ElemeFE/element/issues/11710
+          // Hack for IE: https://github.com/ElemeFE/jade/issues/11710
           // Drop this method when we no longer supports IE
           if (keyCode === 13) {
             this.handleChange(target.value);

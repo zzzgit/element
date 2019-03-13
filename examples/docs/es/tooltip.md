@@ -190,7 +190,7 @@ el atributo `transition` permite personalizar la animación con la que el Toolti
 
 el atributo `disabled` permite deshabilitar `tooltip`. Solo es necesario definirlo como `true`.
 
-De hecho, Tooltip es una extension basada en [Vue-popper](https://github.com/element-component/vue-popper), es posible utilizar cualquier atributo permitido en Vue-popper.
+De hecho, Tooltip es una extension basada en [Vue-popper](https://github.com/jade-component/vue-popper), es posible utilizar cualquier atributo permitido en Vue-popper.
 
 :::demo
 ```html
@@ -234,7 +234,7 @@ Es necesario envolver los elementos de forma deshabilitados en un elemento conte
 | disabled       | saber si el Tooltip se encuentra deshabilitado | boolean | —                                        | false                                    |
 | offset         | offset del Tooltip                       | number  | —                                        | 0                                        |
 | transition     | nombre de animación                      | string  | —                                        | el-fade-in-linear                        |
-| visible-arrow  | si una flecha es mostrada. Para mayor información, revisar la página de [Vue-popper](https://github.com/element-component/vue-popper) | boolean | —                                        | true                                     |
+| visible-arrow  | si una flecha es mostrada. Para mayor información, revisar la página de [Vue-popper](https://github.com/jade-component/vue-popper) | boolean | —                                        | true                                     |
 | popper-options | parámetros de [popper.js](https://popper.js.org/documentation.html) | Object  | referirse a la documentación de [popper.js](https://popper.js.org/documentation.html) | `{ boundariesElement: 'body', gpuAcceleration: false }` |
 | open-delay     | retraso de la apariencia, en milisegundos | number  | —                                        | 0                                        |
 | manual         | si el Tooltipo será controlado de forma manual. `mouseenter` y `mouseleave` no tendrán efecto si fue establecido como `true` | boolean | —                                        | false                                    |

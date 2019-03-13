@@ -73,7 +73,7 @@
 
 ## Icon
 
-Element proporciona un conjunto de iconos propios.
+jade proporciona un conjunto de iconos propios.
 
 ### Uso básico
 

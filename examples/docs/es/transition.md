@@ -1,6 +1,6 @@
 ## Transiciones incorporadas
 
-Puede usar directamente las transiciones incorporadas en Element. Antes de hacerlo, por favor lea la [documentación](https://vuejs.org/v2/api/#transition).
+Puede usar directamente las transiciones incorporadas en jade. Antes de hacerlo, por favor lea la [documentación](https://vuejs.org/v2/api/#transition).
 
 ### Fade
 
@@ -144,9 +144,9 @@ Para efectos de colapsado usar el componente `el-collapse-transition`.
 
 ```js
 // fade/zoom
-import 'element-ui/lib/theme-chalk/base.css';
+import 'jade-ui/lib/theme-chalk/base.css';
 // colapsar
-import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
+import CollapseTransition from 'jade-ui/lib/transitions/collapse-transition';
 import Vue from 'vue'
 
 Vue.component(CollapseTransition.name, CollapseTransition)

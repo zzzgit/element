@@ -35,7 +35,7 @@
   </label>
 </template>
 <script>
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Emitter from 'jade-ui/src/mixins/emitter';
 
   export default {
     name: 'ElRadioButton',
@@ -93,7 +93,7 @@
         return (this.elFormItem || {}).elFormItemSize;
       },
       size() {
-        return this._radioGroup.radioGroupSize || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this._radioGroup.radioGroupSize || this._elFormItemSize || (this.$jade || {}).size;
       },
       isDisabled() {
         return this.disabled || this._radioGroup.disabled || (this.elForm || {}).disabled;

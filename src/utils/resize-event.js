@@ -15,21 +15,21 @@ const resizeHandler = function(entries) {
 };
 
 /* istanbul ignore next */
-export const addResizeListener = function(element, fn) {
+export const addResizeListener = function(jade, fn) {
   if (isServer) return;
-  if (!element.__resizeListeners__) {
-    element.__resizeListeners__ = [];
-    element.__ro__ = new ResizeObserver(resizeHandler);
-    element.__ro__.observe(element);
+  if (!jade.__resizeListeners__) {
+    jade.__resizeListeners__ = [];
+    jade.__ro__ = new ResizeObserver(resizeHandler);
+    jade.__ro__.observe(jade);
   }
-  element.__resizeListeners__.push(fn);
+  jade.__resizeListeners__.push(fn);
 };
 
 /* istanbul ignore next */
-export const removeResizeListener = function(element, fn) {
-  if (!element || !element.__resizeListeners__) return;
-  element.__resizeListeners__.splice(element.__resizeListeners__.indexOf(fn), 1);
-  if (!element.__resizeListeners__.length) {
-    element.__ro__.disconnect();
+export const removeResizeListener = function(jade, fn) {
+  if (!jade || !jade.__resizeListeners__) return;
+  jade.__resizeListeners__.splice(jade.__resizeListeners__.indexOf(fn), 1);
+  if (!jade.__resizeListeners__.length) {
+    jade.__ro__.disconnect();
   }
 };

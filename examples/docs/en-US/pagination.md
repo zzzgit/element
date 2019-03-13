@@ -54,7 +54,7 @@ If you have too much data to display in one page, use pagination.
 
 ### Basic usage
 
-:::demo Set `layout` with different pagination elements you wish to display separated with a comma. Pagination elements are: `prev` (a button navigating to the previous page), `next` (a button navigating to the next page), `pager` (page list), `jumper` (a jump-to input), `total` (total item count), `size` (a select to determine page size) and `->`(every element after this symbol will be pulled to the right).
+:::demo Set `layout` with different pagination elements you wish to display separated with a comma. Pagination elements are: `prev` (a button navigating to the previous page), `next` (a button navigating to the next page), `pager` (page list), `jumper` (a jump-to input), `total` (total item count), `size` (a select to determine page size) and `->`(every jade after this symbol will be pulled to the right).
 ```html
 <div class="block">
   <span class="demonstration">When you have few pages</span>
@@ -190,7 +190,7 @@ Add more modules based on your scenario.
 ```
 :::
 <script>
-  import { addClass } from 'element-ui/src/utils/dom';
+  import { addClass } from 'jade-ui/src/utils/dom';
   export default {
     data() {
       return {

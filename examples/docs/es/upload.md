@@ -394,7 +394,7 @@ Puede arrastrar el archivo dentro de un área en especifico para cargar el archi
 | with-credentials | especifica si enviará cookies            | boolean                            | —                         | false       |
 | show-file-list   | especifica si se debe mostrar la lista de archivos cargados | boolean                            | —                         | true        |
 | drag             | se especifica si se activará el modo arrastrar y soltar | boolean                            | —                         | false       |
-| accept           | acepta [tipos de archivos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept), puede no funcionar cuando `thumbnail-mode` esta en `true` | string                             | —                         | —           |
+| accept           | acepta [tipos de archivos](https://developer.mozilla.org/en-US/docs/Web/HTML/jade/input#attr-accept), puede no funcionar cuando `thumbnail-mode` esta en `true` | string                             | —                         | —           |
 | on-preview       | _hook_ lanzado al hacer clic en los archivos subidos | function(file)                     | —                         | —           |
 | on-remove        | _hook_ lanzado cuando los archivos son eliminados | function(file, fileList)           | —                         | —           |
 | on-success       | _hook_ lanzado cuando los archivos fueron cargados correctamente | function(response, file, fileList) | —                         | —           |

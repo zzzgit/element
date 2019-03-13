@@ -22,8 +22,8 @@
 </style>
 
 <script>
-  import Element from 'main/index.js';
-  const { version } = Element;
+  import jade from 'main/index.js';
+  const { version } = jade;
 
   const ORIGINAL_THEME = '#409EFF';
   export default {
@@ -59,7 +59,7 @@
         const docsHandler = getHandler('docs', 'docs-style');
 
         if (!this.chalk) {
-          const url = `https://unpkg.com/element-ui@${ version }/lib/theme-chalk/index.css`;
+          const url = `https://unpkg.com/jade-ui@${ version }/lib/theme-chalk/index.css`;
           this.getCSSString(url, chalkHandler, 'chalk');
         } else {
           chalkHandler();

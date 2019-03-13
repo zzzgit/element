@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Loading from './loading.vue';
-import { addClass, removeClass, getStyle } from 'element-ui/src/utils/dom';
-import { PopupManager } from 'element-ui/src/utils/popup';
-import afterLeave from 'element-ui/src/utils/after-leave';
+import { addClass, removeClass, getStyle } from 'jade-ui/src/utils/dom';
+import { PopupManager } from 'jade-ui/src/utils/popup';
+import afterLeave from 'jade-ui/src/utils/after-leave';
 const Mask = Vue.extend(Loading);
 
 const loadingDirective = {};
@@ -85,10 +85,10 @@ loadingDirective.install = Vue => {
 
   Vue.directive('loading', {
     bind: function(el, binding, vnode) {
-      const textExr = el.getAttribute('element-loading-text');
-      const spinnerExr = el.getAttribute('element-loading-spinner');
-      const backgroundExr = el.getAttribute('element-loading-background');
-      const customClassExr = el.getAttribute('element-loading-custom-class');
+      const textExr = el.getAttribute('jade-loading-text');
+      const spinnerExr = el.getAttribute('jade-loading-spinner');
+      const backgroundExr = el.getAttribute('jade-loading-background');
+      const customClassExr = el.getAttribute('jade-loading-custom-class');
       const vm = vnode.context;
       const mask = new Mask({
         el: document.createElement('div'),
@@ -108,7 +108,7 @@ loadingDirective.install = Vue => {
     },
 
     update: function(el, binding) {
-      el.instance.setText(el.getAttribute('element-loading-text'));
+      el.instance.setText(el.getAttribute('jade-loading-text'));
       if (binding.oldValue !== binding.value) {
         toggleLoading(el, binding);
       }

@@ -310,7 +310,7 @@ Can be customized to show various content.
 :::
 
 :::tip
-The content of MessageBox can be `VNode`, allowing us to pass custom components. When opening the MessageBox, Vue compares new `VNode` with old `VNode`, then figures out how to efficiently update the UI, so the components may not be completely re-rendered ([#8931](https://github.com/ElemeFE/element/issues/8931)). In this case, you can add a unique key to `VNode` each time MessageBox opens: [example](https://jsfiddle.net/zhiyang/ezmhq2ef).
+The content of MessageBox can be `VNode`, allowing us to pass custom components. When opening the MessageBox, Vue compares new `VNode` with old `VNode`, then figures out how to efficiently update the UI, so the components may not be completely re-rendered ([#8931](https://github.com/ElemeFE/jade/issues/8931)). In this case, you can add a unique key to `VNode` each time MessageBox opens: [example](https://jsfiddle.net/zhiyang/ezmhq2ef).
 :::
 
 ### Use HTML String
@@ -422,7 +422,7 @@ Content of MessageBox can be centered.
 
 ### Global method
 
-If Element is fully imported, it will add the following global methods for Vue.prototype: `$msgbox`, `$alert`, `$confirm` and `$prompt`. So in a Vue instance you can call `MessageBox` like what we did in this page. The parameters are:
+If jade is fully imported, it will add the following global methods for Vue.prototype: `$msgbox`, `$alert`, `$confirm` and `$prompt`. So in a Vue instance you can call `MessageBox` like what we did in this page. The parameters are:
 - `$msgbox(options)`
 - `$alert(message, title, options)` or `$alert(message, options)`
 - `$confirm(message, title, options)` or `$confirm(message, options)`
@@ -433,7 +433,7 @@ If Element is fully imported, it will add the following global methods for Vue.p
 If you prefer importing `MessageBox` on demand:
 
 ```javascript
-import { MessageBox } from 'element-ui';
+import { MessageBox } from 'jade-ui';
 ```
 
 The corresponding methods are: `MessageBox`, `MessageBox.alert`, `MessageBox.confirm` and `MessageBox.prompt`. The parameters are the same as above.

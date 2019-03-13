@@ -1,20 +1,20 @@
 {
   "zh-CN": {
-    "home": "Element - 网站快速成型工具",
-    "guide": "指南 | Element",
-    "component": "组件 | Element",
-    "resource": "资源 | Element"
+    "home": "jade - 网站快速成型工具",
+    "guide": "指南 | jade",
+    "component": "组件 | jade",
+    "resource": "资源 | jade"
   },
   "en-US": {
-    "home": "Element - A Desktop UI Toolkit for Web",
-    "guide": "Guide | Element",
-    "component": "Component | Element",
-    "resource": "Resource | Element"
+    "home": "jade - A Desktop UI Toolkit for Web",
+    "guide": "Guide | jade",
+    "component": "Component | jade",
+    "resource": "Resource | jade"
   },
   "es": {
-    "home": "Element - Un kit de interfaz de usuario para la web",
-    "guide": "Guía | Element",
-    "component": "Componentes | Element",
-    "resource": "Recursos | Element"
+    "home": "jade - Un kit de interfaz de usuario para la web",
+    "guide": "Guía | jade",
+    "component": "Componentes | jade",
+    "resource": "Recursos | jade"
   }
 }

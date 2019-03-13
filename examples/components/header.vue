@@ -266,11 +266,11 @@
           <slot>
             <img
               src="../assets/images/element-logo.svg"
-              alt="element-logo"
+              alt="jade-logo"
               class="nav-logo">
             <img
               src="../assets/images/element-logo-small.svg"
-              alt="element-logo"
+              alt="jade-logo"
               class="nav-logo-small">
           </slot>
 
@@ -367,8 +367,8 @@
   import ThemePicker from './theme-picker.vue';
   import AlgoliaSearch from './search.vue';
   import compoLang from '../i18n/component.json';
-  import Element from 'main/index.js';
-  const { version } = Element;
+  import jade from 'main/index.js';
+  const { version } = jade;
 
   export default {
     data() {

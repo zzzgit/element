@@ -48,7 +48,7 @@
 
 
 #### 修复
-- 修复升级 Webpack 4 产生的问题，无法具名 `import` 组件，`ELEMENT.locale()` 调用报错。（by @island205 in #14220）
+- 修复升级 Webpack 4 产生的问题，无法具名 `import` 组件，`jade.locale()` 调用报错。（by @island205 in #14220）
 - 恢复 2.4.11 文档 (by @iamkun in #14222)
 
 
@@ -615,7 +615,7 @@
 
 - 新增 Upload 的 `before-remove` 钩子方法，#8788（by @firesh）
 - 修复 FormItem 的 `error` 属性初始值无效的问题，#8840
-- 通过指令调用的 Loading 现在支持以 `element-loading-custom-class` 属性的方式设置自定义类名，#8826（by @earlymeme）
+- 通过指令调用的 Loading 现在支持以 `jade-loading-custom-class` 属性的方式设置自定义类名，#8826（by @earlymeme）
 - 修复 CarouselItem 为异步获取时被隐藏的问题，#8921
 - 新增 Tree 的 `renderAfterExpand` 属性，#8972
 
@@ -710,7 +710,7 @@
   - 新增 TypeScript 类型声明
   - 重绘了全部图标，并新增了部分图标
   - 新增了一系列基于断点的工具类，用于当视口尺寸满足一定条件时隐藏元素
-  - 新增全局配置组件尺寸的功能。在引入 Element 时，配置 `size` 字段可以改变所有组件的默认尺寸
+  - 新增全局配置组件尺寸的功能。在引入 jade 时，配置 `size` 字段可以改变所有组件的默认尺寸
 - Button
   - 新增 `round` 属性，用于圆角按钮 #6643
 - TimeSelect

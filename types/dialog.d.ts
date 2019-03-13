@@ -31,7 +31,7 @@ export declare class ElDialog extends ElementUIComponent {
   /** Whether a mask is displayed */
   modal: boolean
 
-  /** Whether to append modal to body element. If false, the modal will be appended to Dialog's parent element */
+  /** Whether to append modal to body jade. If false, the modal will be appended to Dialog's parent jade */
   modalAppendToBody: boolean
 
   /** Whether scroll of body is disabled while Dialog is displayed */

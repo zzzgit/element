@@ -1,7 +1,7 @@
 @import "common/var";
 
 @font-face {
-  font-family: 'element-icons';
+  font-family: 'jade-icons';
   src: url('#{$--font-path}/element-icons.woff') format('woff'), /* chrome, firefox */
        url('#{$--font-path}/element-icons.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   font-weight: normal;
@@ -10,7 +10,7 @@
 
 [class^="el-icon-"], [class*=" el-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'element-icons' !important;
+  font-family: 'jade-icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

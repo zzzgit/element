@@ -605,7 +605,7 @@
 
 - Añadida la función de enganche (hook) `before-remove`  para Upload, #8788 (by @firesh)
 - Arreglado el valor inicial de error que no funcionaba para FormItem, #8840
-- Ahora la directiva Loading soporta nombre de clase personalizado asignando el atributo `element-loading-custom-class`, #8826 (por @earlymeme)
+- Ahora la directiva Loading soporta nombre de clase personalizado asignando el atributo `jade-loading-custom-class`, #8826 (por @earlymeme)
 - Arreglado CarouselItem que se ponía invisible cuando los datos eran actualizados asincrónicamente, #8921
 - Añadido el atributo `renderAfterExpand` para Tree, #8972
 
@@ -701,7 +701,7 @@
   - Todos los iconos existentes son rediseñados. Se han añadido algunos iconos nuevos
   - Añadida una serie de clases de utilidades basadas en puntos de ruptura que ocultan elementos cuando el tamaño del viewport cumple ciertas condiciones
   - Componentes de diseño añadidos: Container, Header, Aside, Main, Footer.
-  - Ahora puede configurar los tamaños de componentes a nivel global. Al importar Element, puede añadir un objeto de configuración global con un prop `size` para configurar tamaños predeterminados para todos los componentes.
+  - Ahora puede configurar los tamaños de componentes a nivel global. Al importar jade, puede añadir un objeto de configuración global con un prop `size` para configurar tamaños predeterminados para todos los componentes.
 - Button
   - Atributo `round` añadido. Se usa para botones de esquinas redondas #6643
 - TimeSelect

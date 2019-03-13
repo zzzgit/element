@@ -1,6 +1,6 @@
 #! /bin/sh
 mkdir temp_web
-git config --global user.name "element-bot"
+git config --global user.name "jade-bot"
 git config --global user.email "wallement@gmail.com"
 
 if [ "$ROT_TOKEN" = "" ]; then
@@ -36,7 +36,7 @@ if [ "$TRAVIS_TAG" ]; then
   # build site
   npm run deploy:build
   cd temp_web
-  git clone --depth 1 -b gh-pages --single-branch https://$ROT_TOKEN@github.com/ElemeFE/element.git && cd element
+  git clone --depth 1 -b gh-pages --single-branch https://$ROT_TOKEN@github.com/ElemeFE/jade.git && cd jade
   # build sub folder
   echo $TRAVIS_TAG
 
@@ -44,8 +44,8 @@ if [ "$TRAVIS_TAG" ]; then
   mkdir $SUB_FOLDER
   rm -rf *.js *.css *.map static
   rm -rf $SUB_FOLDER/**
-  cp -rf ../../examples/element-ui/** .
-  cp -rf ../../examples/element-ui/** $SUB_FOLDER/
+  cp -rf ../../examples/jade-ui/** .
+  cp -rf ../../examples/jade-ui/** $SUB_FOLDER/
   git add -A .
   git commit -m "$TRAVIS_COMMIT_MSG"
   git push origin gh-pages
@@ -61,7 +61,7 @@ cd temp_web
 git clone https://$ROT_TOKEN@github.com/ElementUI/dev.git && cd dev
 mkdir $TRAVIS_BRANCH
 rm -rf $TRAVIS_BRANCH/**
-cp -rf ../../examples/element-ui/** $TRAVIS_BRANCH/
+cp -rf ../../examples/jade-ui/** $TRAVIS_BRANCH/
 git add -A .
 git commit -m "$TRAVIS_COMMIT_MSG"
 git push origin master

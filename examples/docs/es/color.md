@@ -75,11 +75,11 @@
 </style>
 
 ## Color
-Element utiliza un conjunto de paletas para especificar colores, y así, proporcionar una apariencia y sensación coherente para los productos que construye.
+jade utiliza un conjunto de paletas para especificar colores, y así, proporcionar una apariencia y sensación coherente para los productos que construye.
 
 ### Color principal
 
-El color principal de Element es el azul brillante y amigable.
+El color principal de jade es el azul brillante y amigable.
 
 <el-row :gutter="12">
   <el-col :span="6" :xs="{span: 12}">

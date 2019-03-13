@@ -98,10 +98,10 @@
   </div>
 </template>
 <script>
-  import emitter from 'element-ui/src/mixins/emitter';
-  import Migrating from 'element-ui/src/mixins/migrating';
+  import emitter from 'jade-ui/src/mixins/emitter';
+  import Migrating from 'jade-ui/src/mixins/migrating';
   import calcTextareaHeight from './calcTextareaHeight';
-  import merge from 'element-ui/src/utils/merge';
+  import merge from 'jade-ui/src/utils/merge';
 
   export default {
     name: 'ElInput',
@@ -154,7 +154,7 @@
         type: String,
         validator(val) {
           process.env.NODE_ENV !== 'production' &&
-            console.warn('[Element Warn][Input]\'auto-complete\' property will be deprecated in next major version. please use \'autocomplete\' instead.');
+            console.warn('[jade Warn][Input]\'auto-complete\' property will be deprecated in next major version. please use \'autocomplete\' instead.');
           return true;
         }
       },
@@ -193,7 +193,7 @@
         return merge({}, this.textareaCalcStyle, { resize: this.resize });
       },
       inputSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.size || this._elFormItemSize || (this.$jade || {}).size;
       },
       inputDisabled() {
         return this.disabled || (this.elForm || {}).disabled;
@@ -278,14 +278,14 @@
       handleInput(event) {
         if (this.isOnComposition) return;
 
-        // hack for https://github.com/ElemeFE/element/issues/8548
+        // hack for https://github.com/ElemeFE/jade/issues/8548
         // should remove the following line when we don't support IE
         if (event.target.value === this.nativeInputValue) return;
 
         this.$emit('input', event.target.value);
 
         // set input's value, in case parent refuses the change
-        // see: https://github.com/ElemeFE/element/issues/12850
+        // see: https://github.com/ElemeFE/jade/issues/12850
         this.$nextTick(() => {
           let input = this.getInput();
           input.value = this.value;

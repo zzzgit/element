@@ -98,7 +98,7 @@ Disabled state for checkbox.
 
 It is used for multiple checkboxes which are bound in one group, and indicates whether one option is selected by checking if it is checked.
 
-:::demo `checkbox-group` element can manage multiple checkboxes in one group by using `v-model` which is bound as an `Array`. Inside the `el-checkbox` element, `label` is the value of the checkbox. If no content is nested in that tag, `label` will be rendered as the description following the button of the checkbox. `label` also corresponds with the element values in the array. It is selected if the specified value exists in the array, and vice versa.
+:::demo `checkbox-group` jade can manage multiple checkboxes in one group by using `v-model` which is bound as an `Array`. Inside the `el-checkbox` jade, `label` is the value of the checkbox. If no content is nested in that tag, `label` will be rendered as the description following the button of the checkbox. `label` also corresponds with the jade values in the array. It is selected if the specified value exists in the array, and vice versa.
 
 ```html
 <template>
@@ -197,7 +197,7 @@ The `min` and `max` properties can help you to limit the number of checked items
 
 Checkbox with button styles.
 
-:::demo You just need to change `el-checkbox` element into `el-checkbox-button` element. We also provide `size` attribute.
+:::demo You just need to change `el-checkbox` jade into `el-checkbox-button` jade. We also provide `size` attribute.
 ```html
 <template>
   <div>

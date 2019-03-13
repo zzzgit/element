@@ -45,17 +45,17 @@
 <details>
   <summary>你们的文档怎么偷偷更新了？</summary>
   
-  我们只会在 Element 发布新版本时同步更新文档，以体现最新的变化。详细的更新内容可以查看 [changelog](https://github.com/ElemeFE/element/blob/master/CHANGELOG.zh-CN.md)。
+  我们只会在 jade 发布新版本时同步更新文档，以体现最新的变化。详细的更新内容可以查看 [changelog](https://github.com/ElemeFE/jade/blob/master/CHANGELOG.zh-CN.md)。
 </details>
 
 <details>
-  <summary>在项目中引入 Element，但是 CSS 报错/字体文件报错/组件没有样式是什么原因？</summary>
+  <summary>在项目中引入 jade，但是 CSS 报错/字体文件报错/组件没有样式是什么原因？</summary>
   
-  请参考我们提供的 [starter kit](https://github.com/ElementUI/element-starter)，在 webpack 的 loaders 中正确配置 file-loader、css-loader 和 style-loader。此外，我们还提供了基于 [cooking](https://github.com/ElementUI/element-cooking-starter) 和 [laravel](https://github.com/ElementUI/element-in-laravel-starter) 的项目模板。
+  请参考我们提供的 [starter kit](https://github.com/ElementUI/jade-starter)，在 webpack 的 loaders 中正确配置 file-loader、css-loader 和 style-loader。此外，我们还提供了基于 [cooking](https://github.com/ElementUI/jade-cooking-starter) 和 [laravel](https://github.com/ElementUI/jade-in-laravel-starter) 的项目模板。
 </details>
 
 <details>
-  <summary>将 Element 克隆至本地，运行时为何会报错/跑不起来？</summary>
+  <summary>将 jade 克隆至本地，运行时为何会报错/跑不起来？</summary>
   
   首先，确保克隆的是 master 分支的最新代码，并且文件完整。其次，确保本地的 node 版本在 4.0 以上，npm 版本在 3.0 以上。最后，可以启动开发环境：
   
@@ -115,19 +115,19 @@
 </details>
 
 <details>
-  <summary>When do you update documentations of Element?</summary>
+  <summary>When do you update documentations of jade?</summary>
   
-  We update documentations only when a new version of Element is published so that it reflects all the changes introduced in that version. Updated changed can be found in the [changelog](https://github.com/ElemeFE/element/blob/master/CHANGELOG.en-US.md)。
+  We update documentations only when a new version of jade is published so that it reflects all the changes introduced in that version. Updated changed can be found in the [changelog](https://github.com/ElemeFE/jade/blob/master/CHANGELOG.en-US.md)。
 </details>
 
 <details>
-  <summary>I imported Element in my project, but why does it report CSS error/font file error/components have no style?</summary>
+  <summary>I imported jade in my project, but why does it report CSS error/font file error/components have no style?</summary>
   
-  Please refer to our [starter kit](https://github.com/ElementUI/element-starter) and correctly configure file-loader, css-loader and style-loader in webpack config file. Besides, we also provide templated based on [cooking](https://github.com/ElementUI/element-cooking-starter) and [laravel](https://github.com/ElementUI/element-in-laravel-starter).
+  Please refer to our [starter kit](https://github.com/ElementUI/jade-starter) and correctly configure file-loader, css-loader and style-loader in webpack config file. Besides, we also provide templated based on [cooking](https://github.com/ElementUI/jade-cooking-starter) and [laravel](https://github.com/ElementUI/jade-in-laravel-starter).
 </details>
 
 <details>
-  <summary>I cloned Element's repo, but failed to run it. How do I solve it?</summary>
+  <summary>I cloned jade's repo, but failed to run it. How do I solve it?</summary>
   
   First, please make sure to clone the latest code in master branch and cloned files are intact. Then, note that the version of Nodejs should be 4.0+ and npm 3.0+. Finally, activate development:
   
@@ -189,19 +189,19 @@
 </details>
 
 <details>
-  <summary>¿Cuando añaden a la documentación de `Element`?</summary>
+  <summary>¿Cuando añaden a la documentación de `jade`?</summary>
   
-  Añadamos la documentación con cada versión nueva de `Element` y los cambios reflejan los cambios del software de esa versión. Los cambios actuales y históricos se encuentran [aquí](https://github.com/ElemeFE/element/blob/master/CHANGELOG.en-US.md).
+  Añadamos la documentación con cada versión nueva de `jade` y los cambios reflejan los cambios del software de esa versión. Los cambios actuales y históricos se encuentran [aquí](https://github.com/ElemeFE/jade/blob/master/CHANGELOG.en-US.md).
 </details>
 
 <details>
-  <summary>¿Importé `Element` a mi proyecto pero tengo errores con `CSS` y/o fuentes y mis componentes no tienen ningún estilo?</summary>
+  <summary>¿Importé `jade` a mi proyecto pero tengo errores con `CSS` y/o fuentes y mis componentes no tienen ningún estilo?</summary>
   
-  Refiérase a [nuestro ‘kit’ de inicio](https://github.com/ElementUI/element-starter) y configure correctamente `file-loader`, `css-loader` y `style-loader` en el archivo `webpack config`. Además, proveemos un ejemplar para [cooking](https://github.com/ElementUI/element-cooking-starter) y para [laravel](https://github.com/ElementUI/element-in-laravel-starter).
+  Refiérase a [nuestro ‘kit’ de inicio](https://github.com/ElementUI/jade-starter) y configure correctamente `file-loader`, `css-loader` y `style-loader` en el archivo `webpack config`. Además, proveemos un ejemplar para [cooking](https://github.com/ElementUI/jade-cooking-starter) y para [laravel](https://github.com/ElementUI/jade-in-laravel-starter).
 </details>
 
 <details>
-  <summary>Hice un clon del repositorio de `Element` pero no arranca. ¿Como lo resuelvo?</summary>
+  <summary>Hice un clon del repositorio de `jade` pero no arranca. ¿Como lo resuelvo?</summary>
   
   Primero, pro favor, asegúrese de usar la versión más corriente en la rama  `master` y que los archivos están en orden. Después, revise sí la versión de `Nodejs` es 4.0+ y `npm` debe ser 3.0+. Finalmente active el modo desarrollo:
   

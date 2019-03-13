@@ -133,7 +133,7 @@ describe('Tooltip', () => {
       }, 100);
     });
   });
-  it('reference element focus', done => {
+  it('reference jade focus', done => {
     vm = createVue(`
     <el-tooltip ref="tooltip" content="提示文字">
       <button>click</button>

@@ -1,5 +1,5 @@
 <script>
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import Emitter from 'jade-ui/src/mixins/emitter';
 
   export default {
     name: 'ElCheckboxGroup',
@@ -29,7 +29,7 @@
         return (this.elFormItem || {}).elFormItemSize;
       },
       checkboxGroupSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.size || this._elFormItemSize || (this.$jade || {}).size;
       }
     },
 

@@ -30,7 +30,7 @@
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -458,7 +458,7 @@ Puede obtener algunas sugerencias basadas en la entrada actual.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -544,7 +544,7 @@ Personalice cómo se muestran las sugerencias.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
@@ -594,7 +594,7 @@ Búsqueda de datos desde el servidor.
       loadAll() {
         return [
           { "value": "vue", "link": "https://github.com/vuejs/vue" },
-          { "value": "element", "link": "https://github.com/ElemeFE/element" },
+          { "value": "jade", "link": "https://github.com/ElemeFE/jade" },
           { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
           { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
           { "value": "vuex", "link": "https://github.com/vuejs/vuex" },

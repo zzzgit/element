@@ -69,8 +69,8 @@ import Header from '../packages/header/index.js';
 import Aside from '../packages/aside/index.js';
 import Main from '../packages/main/index.js';
 import Footer from '../packages/footer/index.js';
-import locale from 'element-ui/src/locale';
-import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import locale from 'jade-ui/src/locale';
+import CollapseTransition from 'jade-ui/src/transitions/collapse-transition';
 
 const components = [
   Pagination,
@@ -151,7 +151,7 @@ const install = function(Vue, opts = {}) {
 
   Vue.use(Loading.directive);
 
-  Vue.prototype.$ELEMENT = {
+  Vue.prototype.$jade = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   };

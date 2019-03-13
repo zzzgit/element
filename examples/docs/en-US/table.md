@@ -1702,7 +1702,7 @@ When the row content is too long and you do not want to display the horizontal s
 ### Summary row
 
 For table of numbers, you can add an extra row at the table footer displaying each column's sum.
-:::demo You can add the summary row by setting `show-summary` to `true`. By default, for the summary row, the first column does not sum anything up but always displays 'Sum' (you can configure the displayed text using `sum-text`), while other columns sum every number in that column up and display them. You can of course define your own sum behaviour. To do so, pass a method to `summary-method`, which returns an array, and each element of the returned array will be displayed in the columns of the summary row. The second table of this example is a detailed demo.
+:::demo You can add the summary row by setting `show-summary` to `true`. By default, for the summary row, the first column does not sum anything up but always displays 'Sum' (you can configure the displayed text using `sum-text`), while other columns sum every number in that column up and display them. You can of course define your own sum behaviour. To do so, pass a method to `summary-method`, which returns an array, and each jade of the returned array will be displayed in the columns of the summary row. The second table of this example is a detailed demo.
 ```html
 <template>
   <el-table
@@ -2058,7 +2058,7 @@ You can customize row index in `type=index` columns.
 | Attribute      | Description          | Type      | Accepted Values       | Default  |
 |----------------|----------------------|-----------|-----------------------|----------|
 | data | Table data | array | — | — |
-| height | Table's height. By default it has an `auto` height. If its value is a number, the height is measured in pixels; if its value is a string, the value will be assigned to element's style.height, the height is affected by external styles | string/number | — | — |
+| height | Table's height. By default it has an `auto` height. If its value is a number, the height is measured in pixels; if its value is a string, the value will be assigned to jade's style.height, the height is affected by external styles | string/number | — | — |
 | max-height | Table's max-height. The height of the table starts from `auto` until it reaches the maxHeight limit. The `maxHeight` is measured in pixels, same as `height` | string/number | — | — |
 | stripe | whether Table is striped | boolean | — | false |
 | border | whether Table has vertical border | boolean | — | false |
@@ -2151,7 +2151,7 @@ You can customize row index in `type=index` columns.
 | label-class-name | class name of the label of this column | string | — | — |
 | selectable | function that determines if a certain row can be selected, works when `type` is 'selection' | Function(row, index) | — | — |
 | reserve-selection | whether to reserve selection after data refreshing, works when `type` is 'selection'. Note that `row-key` is required for this to work | boolean | — | false |
-| filters | an array of data filtering options. For each element in this array, `text` and `value` are required | Array[{ text, value }] | — | — |
+| filters | an array of data filtering options. For each jade in this array, `text` and `value` are required | Array[{ text, value }] | — | — |
 | filter-placement | placement for the filter dropdown | String | same as Tooltip's `placement` | — |
 | filter-multiple | whether data filtering supports multiple options | Boolean | — | true |
 | filter-method | data filtering method. If `filter-multiple` is on, this method will be called multiple times for each row, and a row will display if one of the calls returns `true` | Function(value, row, column) | — | — |

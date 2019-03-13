@@ -1,20 +1,20 @@
 ## 快速上手
 
-本节将介绍如何在项目中使用 Element。
+本节将介绍如何在项目中使用 jade。
 
 ### 使用 vue-cli@3
 
-我们为新版的 vue-cli 准备了相应的 [Element 插件](https://github.com/ElementUI/vue-cli-plugin-element)，你可以用它们快速地搭建一个基于 Element 的项目。
+我们为新版的 vue-cli 准备了相应的 [jade 插件](https://github.com/ElementUI/vue-cli-plugin-jade)，你可以用它们快速地搭建一个基于 jade 的项目。
 
 ### 使用 Starter Kit
 
-我们提供了通用的[项目模板](https://github.com/ElementUI/element-starter)，你可以直接使用。对于 Laravel 用户，我们也准备了相应的[模板](https://github.com/ElementUI/element-in-laravel-starter)，同样可以直接下载使用。
+我们提供了通用的[项目模板](https://github.com/ElementUI/jade-starter)，你可以直接使用。对于 Laravel 用户，我们也准备了相应的[模板](https://github.com/ElementUI/jade-in-laravel-starter)，同样可以直接下载使用。
 
 如果不希望使用我们提供的模板，请继续阅读。
 
-### 引入 Element
+### 引入 jade
 
-你可以引入整个 Element，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 Element。
+你可以引入整个 jade，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 jade。
 
 #### 完整引入
 
@@ -22,8 +22,8 @@
 
 ```javascript
 import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'jade-ui';
+import 'jade-ui/lib/theme-chalk/index.css';
 import App from './App.vue';
 
 Vue.use(ElementUI);
@@ -34,7 +34,7 @@ new Vue({
 });
 ```
 
-以上代码便完成了 Element 的引入。需要注意的是，样式文件需要单独引入。
+以上代码便完成了 jade 的引入。需要注意的是，样式文件需要单独引入。
 
 #### 按需引入
 
@@ -55,7 +55,7 @@ npm install babel-plugin-component -D
     [
       "component",
       {
-        "libraryName": "element-ui",
+        "libraryName": "jade-ui",
         "styleLibraryName": "theme-chalk"
       }
     ]
@@ -67,7 +67,7 @@ npm install babel-plugin-component -D
 
 ```javascript
 import Vue from 'vue';
-import { Button, Select } from 'element-ui';
+import { Button, Select } from 'jade-ui';
 import App from './App.vue';
 
 Vue.component(Button.name, Button);
@@ -83,7 +83,7 @@ new Vue({
 });
 ```
 
-完整组件列表和引入方式（完整组件列表以 [components.json](https://github.com/ElemeFE/element/blob/master/components.json) 为准）
+完整组件列表和引入方式（完整组件列表以 [components.json](https://github.com/ElemeFE/jade/blob/master/components.json) 为准）
 
 ```javascript
 import Vue from 'vue';
@@ -155,7 +155,7 @@ import {
   MessageBox,
   Message,
   Notification
-} from 'element-ui';
+} from 'jade-ui';
 
 Vue.use(Pagination);
 Vue.use(Dialog);
@@ -234,23 +234,23 @@ Vue.prototype.$message = Message;
 
 ### 全局配置
 
-在引入 Element 时，可以传入一个全局配置对象。该对象目前支持 `size` 与 `zIndex` 字段。`size` 用于改变组件的默认尺寸，`zIndex` 设置弹框的初始 z-index（默认值：2000）。按照引入 Element 的方式，具体操作如下：
+在引入 jade 时，可以传入一个全局配置对象。该对象目前支持 `size` 与 `zIndex` 字段。`size` 用于改变组件的默认尺寸，`zIndex` 设置弹框的初始 z-index（默认值：2000）。按照引入 jade 的方式，具体操作如下：
 
-完整引入 Element：
+完整引入 jade：
 
 ```js
 import Vue from 'vue';
-import Element from 'element-ui';
-Vue.use(Element, { size: 'small', zIndex: 3000 });
+import jade from 'jade-ui';
+Vue.use(jade, { size: 'small', zIndex: 3000 });
 ```
 
-按需引入 Element：
+按需引入 jade：
 
 ```js
 import Vue from 'vue';
-import { Button } from 'element-ui';
+import { Button } from 'jade-ui';
 
-Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
+Vue.prototype.$jade = { size: 'small', zIndex: 3000 };
 Vue.use(Button);
 ```
 
@@ -258,13 +258,13 @@ Vue.use(Button);
 
 ### 开始使用
 
-至此，一个基于 Vue 和 Element 的开发环境已经搭建完毕，现在就可以编写代码了。各个组件的使用方法请参阅它们各自的文档。
+至此，一个基于 Vue 和 jade 的开发环境已经搭建完毕，现在就可以编写代码了。各个组件的使用方法请参阅它们各自的文档。
 
 ### 使用 Nuxt.js
 
 我们还可以使用 [Nuxt.js](https://nuxtjs.org)：
 
 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe src="https://glitch.com/embed/#!/embed/nuxt-with-element?path=nuxt.config.js&previewSize=0&attributionHidden=true" alt="nuxt-with-element on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
+  <iframe src="https://glitch.com/embed/#!/embed/nuxt-with-jade?path=nuxt.config.js&previewSize=0&attributionHidden=true" alt="nuxt-with-jade on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
 </div>
 

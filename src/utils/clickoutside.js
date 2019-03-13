@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { on } from 'element-ui/src/utils/dom';
+import { on } from 'jade-ui/src/utils/dom';
 
 const nodeList = [];
 const ctx = '@@clickoutsideContext';
@@ -41,7 +41,7 @@ function createDocumentHandler(el, binding, vnode) {
  * @desc 点击元素外面才会触发的事件
  * @example
  * ```vue
- * <div v-element-clickoutside="handleClose">
+ * <div v-jade-clickoutside="handleClose">
  * ```
  */
 export default {

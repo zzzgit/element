@@ -57,7 +57,7 @@ Se muestra la animación mientras se cargan los datos.
 
 Muestra una animación en un contenedor (como en una tabla) mientras se cargan los datos.
 
-:::demo Element provee dos maneras para invocar el componente de Cargando: por directiva y por servicio. Para la directiva personalizada `v-loading`, solo necesitas enlazarlo a un valor `Boolean`. Por defecto, la máscara de carga se agregará al elemento donde se usa la directiva. Al agregar el modificador `body`, la máscara se agrega al elemento body.
+:::demo jade provee dos maneras para invocar el componente de Cargando: por directiva y por servicio. Para la directiva personalizada `v-loading`, solo necesitas enlazarlo a un valor `Boolean`. Por defecto, la máscara de carga se agregará al elemento donde se usa la directiva. Al agregar el modificador `body`, la máscara se agrega al elemento body.
 
 ```html
 <template>
@@ -117,14 +117,14 @@ Muestra una animación en un contenedor (como en una tabla) mientras se cargan l
 
 Puede personalizar el texto de carga, spinner de carga y color de fondo.
 
-:::demo Agrege el atributo `element-loading-text` al elemento en el que `v-loading` está vinculado, y su valor se mostrará debajo del spinner. Del mismo modo, `element-loading-spinner` y `element-loading-background` son para personalizar el nombre de la clase del spinner y el color de fondo.
+:::demo Agrege el atributo `jade-loading-text` al elemento en el que `v-loading` está vinculado, y su valor se mostrará debajo del spinner. Del mismo modo, `jade-loading-spinner` y `jade-loading-background` son para personalizar el nombre de la clase del spinner y el color de fondo.
 ```html
 <template>
   <el-table
     v-loading="loading2"
-    element-loading-text="Loading..."
-    element-loading-spinner="el-icon-loading"
-    element-loading-background="rgba(0, 0, 0, 0.8)"
+    jade-loading-text="Loading..."
+    jade-loading-spinner="el-icon-loading"
+    jade-loading-background="rgba(0, 0, 0, 0.8)"
     :data="tableData"
     style="width: 100%">
     <el-table-column
@@ -226,7 +226,7 @@ Muestra una animación de pantalla completa mientras se cargan los datos
 Puede invocar el componente con un servicio. Importe el servicio:
 
 ```javascript
-import { Loading } from 'element-ui';
+import { Loading } from 'jade-ui';
 ```
 Invocar:
 ```javascript
@@ -245,7 +245,7 @@ console.log(loadingInstance1 === loadingInstance2); // true
 ```
 Llamar al método `close` en cualquiera de estas puede cerrarlo.
 
-Si Element es importado completamente, un método global `$loading` puede ser registrado a Vue.prototype. Puede invocarlo como esto: `this.$loading(options)`, y también devuelve una instancia del componente.
+Si jade es importado completamente, un método global `$loading` puede ser registrado a Vue.prototype. Puede invocarlo como esto: `this.$loading(options)`, y también devuelve una instancia del componente.
 
 ### Options
 | Atributo    | Descripción                              | Tipo          | Valores aceptados | Por defecto   |

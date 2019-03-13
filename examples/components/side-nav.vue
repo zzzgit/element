@@ -126,12 +126,12 @@
         <a>{{ lang === 'zh-CN' ? '赞助商' : 'Sponsors' }}</a>
         <ul class="pure-menu-list sub-nav">
           <li class="nav-item" v-show="lang !== 'zh-CN'">
-            <a href="https://tipe.io/?ref=element" target="_blank">
+            <a href="https://tipe.io/?ref=jade" target="_blank">
               <img src="~examples/assets/images/tipe.svg" alt="tipe.io">
             </a>
           </li>
           <li class="nav-item">
-            <a class="sponsor" href="https://www.duohui.cn/?utm_source=element&utm_medium=web&utm_campaign=element-index" target="_blank">
+            <a class="sponsor" href="https://www.duohui.cn/?utm_source=jade&utm_medium=web&utm_campaign=jade-index" target="_blank">
               <img src="~examples/assets/images/duohui.svg" alt="duohui">
             </a>
           </li>

@@ -125,7 +125,7 @@ Dialog pops up a dialog box, and it's quite customizable.
 
 ### Customizations
 
-The content of Dialog can be anything, even a table or a form. This example shows how to use Element Table and Form with Dialog。
+The content of Dialog can be anything, even a table or a form. This example shows how to use jade Table and Form with Dialog。
 
 :::demo
 
@@ -287,7 +287,7 @@ If the variable bound to `visible` is managed in Vuex store, the `.sync` can not
 | fullscreen     | whether the Dialog takes up full screen | boolean    | — | false |
 | top      | value for `margin-top` of Dialog CSS | string    | — | 15vh |
 | modal     | whether a mask is displayed | boolean   | — | true |
-| modal-append-to-body     | whether to append modal to body element. If false, the modal will be appended to Dialog's parent element | boolean   | — | true |
+| modal-append-to-body     | whether to append modal to body jade. If false, the modal will be appended to Dialog's parent jade | boolean   | — | true |
 | append-to-body     | whether to append Dialog itself to body. A nested Dialog should have this attribute set to `true` | boolean   | — | false |
 | lock-scroll     | whether scroll of body is disabled while Dialog is displayed | boolean   | — | true |
 | custom-class      | custom class names for Dialog | string    | — | — |

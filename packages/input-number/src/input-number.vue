@@ -46,9 +46,9 @@
   </div>
 </template>
 <script>
-  import ElInput from 'element-ui/packages/input';
-  import Focus from 'element-ui/src/mixins/focus';
-  import RepeatClick from 'element-ui/src/directives/repeat-click';
+  import ElInput from 'jade-ui/packages/input';
+  import Focus from 'jade-ui/src/mixins/focus';
+  import RepeatClick from 'jade-ui/src/directives/repeat-click';
 
   export default {
     name: 'ElInputNumber',
@@ -140,7 +140,7 @@
         const stepPrecision = getPrecision(step);
         if (precision !== undefined) {
           if (stepPrecision > precision) {
-            console.warn('[Element Warn][InputNumber]precision should not be less than the decimal places of step');
+            console.warn('[jade Warn][InputNumber]precision should not be less than the decimal places of step');
           }
           return precision;
         } else {
@@ -154,7 +154,7 @@
         return (this.elFormItem || {}).elFormItemSize;
       },
       inputNumberSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+        return this.size || this._elFormItemSize || (this.$jade || {}).size;
       },
       inputNumberDisabled() {
         return this.disabled || (this.elForm || {}).disabled;

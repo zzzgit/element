@@ -5,7 +5,7 @@ export interface LoadingServiceOptions {
   /** The DOM node Loading needs to cover. Accepts a DOM object or a string. If it's a string, it will be passed to `document.querySelector` to get the corresponding DOM node */
   target?: HTMLElement | string
 
-  /** Whether to make the mask append to the body element */
+  /** Whether to make the mask append to the body jade */
   body?: boolean
 
   /** Whether to show the loading mask in fullscreen */

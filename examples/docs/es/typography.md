@@ -118,32 +118,32 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
   <tbody>
     <tr>
       <td class="h1">Main Title</td>
-      <td class="h1">Build with Element</td>
+      <td class="h1">Build with jade</td>
       <td class="color-dark-light">20px  Extra large</td>
     </tr>
     <tr>
       <td class="h2">Title</td>
-      <td class="h2">Build with Element</td>
+      <td class="h2">Build with jade</td>
       <td class="color-dark-light">18px large</td>
     </tr>
     <tr>
       <td class="h3">Small Title</td>
-      <td class="h3">Build with Element</td>
+      <td class="h3">Build with jade</td>
       <td class="color-dark-light">16px Medium</td>
     </tr>
     <tr>
       <td class="text-regular">Body</td>
-      <td class="text-regular">Build with Element</td>
+      <td class="text-regular">Build with jade</td>
       <td class="color-dark-light">14px Small</td>
     </tr>
     <tr>
       <td class="text-small">Body (small)</td>
-      <td class="text-small">Build with Element</td>
+      <td class="text-small">Build with jade</td>
       <td class="color-dark-light">13px Extra Small</td>
     </tr>
     <tr>
       <td class="text-smaller">Supplementary text</td>
-      <td class="text-smaller">Build with Element</td>
+      <td class="text-smaller">Build with jade</td>
       <td class="color-dark-light">12px Extra Extra Small</td>
     </tr>
   </tbody>

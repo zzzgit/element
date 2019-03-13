@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import entry from './app';
 import VueRouter from 'vue-router';
-import Element from 'main/index.js';
+import jade from 'main/index.js';
 import 'packages/theme-chalk/src/index.scss';
 import routes from './route.config';
 import demoBlock from './components/demo-block';
@@ -11,7 +11,7 @@ import SideNav from './components/side-nav';
 import FooterNav from './components/footer-nav';
 import title from './i18n/title';
 
-Vue.use(Element);
+Vue.use(jade);
 Vue.use(VueRouter);
 Vue.component('demo-block', demoBlock);
 Vue.component('main-footer', MainFooter);
@@ -33,7 +33,7 @@ router.afterEach(route => {
       return;
     }
   }
-  document.title = 'Element';
+  document.title = 'jade';
 });
 
 new Vue({ // eslint-disable-line

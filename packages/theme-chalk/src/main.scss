@@ -2,7 +2,7 @@
 @import "common/var";
 
 @include b(main) {
-  // IE11 supports the <main> element partially https://caniuse.com/#search=main
+  // IE11 supports the <main> jade partially https://caniuse.com/#search=main
   display: block;
   flex: 1;
   flex-basis: auto;

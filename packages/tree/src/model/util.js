@@ -15,8 +15,8 @@ export const getNodeKey = function(key, data) {
   return data[key];
 };
 
-export const findNearestComponent = (element, componentName) => {
-  let target = element;
+export const findNearestComponent = (jade, componentName) => {
+  let target = jade;
   while (target && target.tagName !== 'BODY') {
     if (target.__vue__ && target.__vue__.$options.name === componentName) {
       return target.__vue__;

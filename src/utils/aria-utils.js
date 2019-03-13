@@ -3,16 +3,16 @@ var aria = aria || {};
 aria.Utils = aria.Utils || {};
 
 /**
- * @desc Set focus on descendant nodes until the first focusable element is
+ * @desc Set focus on descendant nodes until the first focusable jade is
  *       found.
- * @param element
+ * @param jade
  *          DOM node for which to find the first focusable descendant.
  * @returns
- *  true if a focusable element is found and focus is set.
+ *  true if a focusable jade is found and focus is set.
  */
-aria.Utils.focusFirstDescendant = function(element) {
-  for (var i = 0; i < element.childNodes.length; i++) {
-    var child = element.childNodes[i];
+aria.Utils.focusFirstDescendant = function(jade) {
+  for (var i = 0; i < jade.childNodes.length; i++) {
+    var child = jade.childNodes[i];
     if (aria.Utils.attemptFocus(child) || aria.Utils.focusFirstDescendant(child)) {
       return true;
     }
@@ -22,15 +22,15 @@ aria.Utils.focusFirstDescendant = function(element) {
 
 /**
  * @desc Find the last descendant node that is focusable.
- * @param element
+ * @param jade
  *          DOM node for which to find the last focusable descendant.
  * @returns
- *  true if a focusable element is found and focus is set.
+ *  true if a focusable jade is found and focus is set.
  */
 
-aria.Utils.focusLastDescendant = function(element) {
-  for (var i = element.childNodes.length - 1; i >= 0; i--) {
-    var child = element.childNodes[i];
+aria.Utils.focusLastDescendant = function(jade) {
+  for (var i = jade.childNodes.length - 1; i >= 0; i--) {
+    var child = jade.childNodes[i];
     if (aria.Utils.attemptFocus(child) || aria.Utils.focusLastDescendant(child)) {
       return true;
     }
@@ -40,38 +40,38 @@ aria.Utils.focusLastDescendant = function(element) {
 
 /**
  * @desc Set Attempt to set focus on the current node.
- * @param element
+ * @param jade
  *          The node to attempt to focus on.
  * @returns
- *  true if element is focused.
+ *  true if jade is focused.
  */
-aria.Utils.attemptFocus = function(element) {
-  if (!aria.Utils.isFocusable(element)) {
+aria.Utils.attemptFocus = function(jade) {
+  if (!aria.Utils.isFocusable(jade)) {
     return false;
   }
   aria.Utils.IgnoreUtilFocusChanges = true;
   try {
-    element.focus();
+    jade.focus();
   } catch (e) {
   }
   aria.Utils.IgnoreUtilFocusChanges = false;
-  return (document.activeElement === element);
+  return (document.activeElement === jade);
 };
 
-aria.Utils.isFocusable = function(element) {
-  if (element.tabIndex > 0 || (element.tabIndex === 0 && element.getAttribute('tabIndex') !== null)) {
+aria.Utils.isFocusable = function(jade) {
+  if (jade.tabIndex > 0 || (jade.tabIndex === 0 && jade.getAttribute('tabIndex') !== null)) {
     return true;
   }
 
-  if (element.disabled) {
+  if (jade.disabled) {
     return false;
   }
 
-  switch (element.nodeName) {
+  switch (jade.nodeName) {
     case 'A':
-      return !!element.href && element.rel !== 'ignore';
+      return !!jade.href && jade.rel !== 'ignore';
     case 'INPUT':
-      return element.type !== 'hidden' && element.type !== 'file';
+      return jade.type !== 'hidden' && jade.type !== 'file';
     case 'BUTTON':
     case 'SELECT':
     case 'TEXTAREA':
@@ -84,7 +84,7 @@ aria.Utils.isFocusable = function(element) {
 /**
  * 触发一个事件
  * mouseenter, mouseleave, mouseover, keyup, change, click 等
- * @param  {Element} elm
+ * @param  {jade} elm
  * @param  {String} name
  * @param  {*} opts
  */

@@ -1,18 +1,18 @@
-# Element UI Contributing Guide
+# jade UI Contributing Guide
 
-Hi! Thank you for choosing Element UI.
+Hi! Thank you for choosing jade UI.
 
-Element UI is a Vue 2.0 based component library for developers, designers and product managers.
+jade UI is a Vue 2.0 based component library for developers, designers and product managers.
 
-We are excited that you are interested in contributing to Element. Before submitting your contribution though, please make sure to take a moment and read through the following guidelines.
+We are excited that you are interested in contributing to jade. Before submitting your contribution though, please make sure to take a moment and read through the following guidelines.
 
 ## Issue Guidelines
 
-- Issues are exclusively for bug reports, feature requests and design-related topics. Other questions may be closed directly. If any questions come up when you are using Element, please hit [Gitter](https://gitter.im/element-en/Lobby) for help.
+- Issues are exclusively for bug reports, feature requests and design-related topics. Other questions may be closed directly. If any questions come up when you are using jade, please hit [Gitter](https://gitter.im/jade-en/Lobby) for help.
 
 - Before submitting an issue, please check if similar problems have already been issued.
 
-- Please specify which version of `Element` and `Vue` you are using, and provide OS and browser information. [JSFiddle](https://jsfiddle.net/) is recommended to build a live demo so that your issue can be reproduced clearly.
+- Please specify which version of `jade` and `Vue` you are using, and provide OS and browser information. [JSFiddle](https://jsfiddle.net/) is recommended to build a live demo so that your issue can be reproduced clearly.
 
 ## Pull Request Guidelines
 
@@ -37,7 +37,7 @@ We are excited that you are interested in contributing to Element. Before submit
 ## Prerequisites
 `Node.js 4+`, `yarn` and `npm 3+` are required. Note: we use yarn to lock dependency versions, so you should install dependencies using `yarn` instead of `npm install`.
 ```shell
-git clone git@github.com:ElemeFE/element.git
+git clone git@github.com:ElemeFE/jade.git
 npm run dev
 
 # open http://localhost:8085
