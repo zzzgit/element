@@ -90,7 +90,7 @@ loadingDirective.install = Vue => {
   Vue.directive('loading', {
     bind: function(el, binding, vnode) {
       const textExr = el.getAttribute('element-loading-text');
-      const spinnerExr = el.getAttribute('element-loading-spinner');
+      const spinnerExr = el.getAttribute('element-loading-spinner') || 'el-icon-loading';
       const backgroundExr = el.getAttribute('element-loading-background');
       const customClassExr = el.getAttribute('element-loading-custom-class');
       const vm = vnode.context;
