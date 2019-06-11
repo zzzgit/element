@@ -15,7 +15,7 @@ module.exports = {
     filename: 'element-ui.common.js',
     chunkFilename: '[id].js',
     libraryExport: 'default',
-    library: 'ELEMENT',
+    library: 'JADE',
     libraryTarget: 'commonjs2'
   },
   resolve: {
